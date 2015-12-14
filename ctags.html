@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>使用 | vim学习</title>
+        <title>Ctags | vim学习</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -39,10 +39,8 @@
         
     
     
-    <link rel="next" href="./copy_paste.html" />
     
-    
-    <link rel="prev" href="./index.html" />
+    <link rel="prev" href="./taglist.html" />
     
 
         
@@ -51,9 +49,9 @@
         
         
     <div class="book"
-        data-level="1"
-        data-chapter-title="使用"
-        data-filepath="use.md"
+        data-level="2.5"
+        data-chapter-title="Ctags"
+        data-filepath="ctags.md"
         data-basepath="."
         data-revision="Mon Dec 14 2015 14:25:16 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -84,7 +82,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1" data-path="use.html">
+        <li class="chapter " data-level="1" data-path="use.html">
             
                 
                     <a href="./use.html">
@@ -301,7 +299,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.5" data-path="ctags.html">
+        <li class="chapter active" data-level="2.5" data-path="ctags.html">
             
                 
                     <a href="./ctags.html">
@@ -354,18 +352,35 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h2>
-<p>&#x8BB0;&#x5F55;vim&#x7684;&#x4E00;&#x4E9B;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</p>
-<ul>
-<li><a href="copy_paste.html">&#x590D;&#x5236;&#x526A;&#x5207;&#x7C98;&#x8D34;</a></li>
-<li><a href="delete.html">&#x5220;&#x9664;</a></li>
-<li><a href="select.html">&#x9009;&#x62E9;</a></li>
-<li><a href="quick_go.html">&#x79FB;&#x52A8;</a></li>
-<li><a href="block_edit.html">&#x5757;&#x7F16;&#x8F91;</a></li>
-<li><a href="replace.html">&#x66FF;&#x6362;</a></li>
-<li><a href="do_shell.html">&#x6267;&#x884C;shell&#x547D;&#x4EE4;</a></li>
-</ul>
+                        <h2 id="ctags">ctags</h2>
+<h3 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h3>
+<pre><code>&quot; &#x914D;&#x7F6E;Ctrl + F12&#x4E3A;&#x751F;&#x4EA7;ctags&#x7684;&#x5FEB;&#x6377;&#x952E;
+map &lt;C-F12&gt; :!ctags -R .&lt;CR&gt;
+</code></pre><h3 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h3>
+<pre><code>// &#x8DF3;&#x8F6C;&#x5230;&#x53D8;&#x91CF;&#x6216;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x5904;
+Ctrl + ]
 
+// &#x8FD4;&#x56DE;&#x4E0A;&#x4E00;&#x4E2A;&#x5730;&#x65B9;
+Ctrl + t
+
+// &#x8DF3;&#x8F6C;&#x5230;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x7684;&#x5B9A;&#x4E49;&#x5904;(&#x4F46;&#x662F;&#x597D;&#x50CF;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x51FD;&#x6570;&#x5185;&#x6709;&#x76F8;&#x5F53;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x65F6;, &#x90FD;&#x4F1A;&#x8DF3;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;)
+gd &#x6216;&#x8005; [ + &lt;Tab&gt;
+</code></pre><h3 id="&#x67E5;&#x8BE2;">&#x67E5;&#x8BE2;</h3>
+<pre><code>// &#x67E5;&#x770B;&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x7684;&#x8BED;&#x6CD5;&#x5143;&#x7D20;
+ctags --list-kinds
+
+// &#x67E5;&#x770B;&#x652F;&#x6301;&#x7684;c&#x8BED;&#x6CD5;&#x5143;&#x7D20;
+ctags --list-kinds=c
+
+// &#x67E5;&#x770B;ctags&#x652F;&#x6301;&#x7684;&#x8BED;&#x8A00;
+ctags --list-languages
+
+// &#x67E5;&#x770B;&#x6BCF;&#x79CD;&#x8BED;&#x8A00;&#x5BF9;&#x5E94;&#x7684;&#x6269;&#x5C55;&#x540D;
+ctags --list-maps
+
+// &#x4F7F;&#x751F;&#x6210;&#x7684;&#x6807;&#x7B7E;&#x652F;&#x6301;&#x652F;&#x6301;&#x5C40;&#x90E8;&#x53D8;&#x91CF;, &#x4F46;&#x662F;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x53EA;&#x80FD;&#x8DF3;&#x8F6C;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x58F0;&#x660E;&#x7684;&#x5730;&#x65B9;
+ctags --c-kinds=+lpx -R .
+</code></pre>
                     
                     </section>
                 
@@ -375,10 +390,8 @@
         </div>
 
         
-        <a href="./index.html" class="navigation navigation-prev " aria-label="Previous page: 前言"><i class="fa fa-angle-left"></i></a>
+        <a href="./taglist.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Taglist"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="./copy_paste.html" class="navigation navigation-next " aria-label="Next page: 复制剪切粘贴"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
