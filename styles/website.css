@@ -2,3 +2,7 @@
 h2 {
     border-bottom: 1px solid #EFEAEA;
 }
+
+.book .book-body .page-wrapper .page-inner section.normal  .page-footer {
+    font-size: 12px;
+} 
