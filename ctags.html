@@ -21,11 +21,15 @@
     <link rel="stylesheet" href="gitbook/style.css">
     
         
-        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search-pro/search-pro.css">
         
     
         
-        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-tbfed-pagefooter/footer.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
         
     
         
@@ -38,6 +42,8 @@
 
         
     
+    
+    <link rel="next" href="./vim-multiple-cursors.html" />
     
     
     <link rel="prev" href="./taglist.html" />
@@ -53,7 +59,7 @@
         data-chapter-title="Ctags"
         data-filepath="ctags.md"
         data-basepath="."
-        data-revision="Mon Dec 14 2015 14:25:16 GMT+0800 (CST)"
+        data-revision="Thu Dec 24 2015 14:32:52 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -218,6 +224,21 @@
             
         </li>
     
+        <li class="chapter " data-level="1.9" data-path="split_screen.html">
+            
+                
+                    <a href="./split_screen.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        分屏
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -314,6 +335,21 @@
             
         </li>
     
+        <li class="chapter " data-level="2.6" data-path="vim-multiple-cursors.html">
+            
+                
+                    <a href="./vim-multiple-cursors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        vim-multiple-cursors
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -380,7 +416,9 @@ ctags --list-maps
 
 // &#x4F7F;&#x751F;&#x6210;&#x7684;&#x6807;&#x7B7E;&#x652F;&#x6301;&#x652F;&#x6301;&#x5C40;&#x90E8;&#x53D8;&#x91CF;, &#x4F46;&#x662F;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x53EA;&#x80FD;&#x8DF3;&#x8F6C;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;&#x58F0;&#x660E;&#x7684;&#x5730;&#x65B9;
 ctags --c-kinds=+lpx -R .
-</code></pre>
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; zhangjikai.com 2015 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2015-12-14 14:23:11
+</span></footer>
                     
                     </section>
                 
@@ -390,8 +428,10 @@ ctags --c-kinds=+lpx -R .
         </div>
 
         
-        <a href="./taglist.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Taglist"><i class="fa fa-angle-left"></i></a>
+        <a href="./taglist.html" class="navigation navigation-prev " aria-label="Previous page: Taglist"><i class="fa fa-angle-left"></i></a>
         
+        
+        <a href="./vim-multiple-cursors.html" class="navigation navigation-next " aria-label="Next page: vim-multiple-cursors"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
@@ -400,11 +440,11 @@ ctags --c-kinds=+lpx -R .
 <script src="gitbook/app.js"></script>
 
     
-    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    <script src="gitbook/plugins/gitbook-plugin-search-pro/search-pro.js"></script>
     
 
     
-    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
     
 
     
@@ -421,7 +461,7 @@ ctags --c-kinds=+lpx -R .
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    var config = {"search-pro":{"cutWordLib":"nodejieba","defineWord":["vim"]},"github":{"url":"https://github.com/zhangjikai/vim_learn"},"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"tbfed-pagefooter":{"copyright":"Copyright &copy zhangjikai.com 2015","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
     gitbook.start(config);
 });
 </script>
