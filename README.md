@@ -8,6 +8,15 @@ vim学习记录
 * [替换](替换.md)
 * [块编辑](块编辑.md)
 * [执行shell命令](执行shell命令.md)
+* [分屏](分屏.md)
 * [vimrc配置](vimrc配置.md)
+
+### 插件
+* [Vundle](插件/Vundle.md)
+* [Markdown](插件/Markdown.md)
+* [MiniBufExplorer](插件/MiniBufExplorer.md)
+* [Taglist](插件/Taglist.md)
+* [Ctags](插件/Ctags.md)
+* [Vim-multiple-cursors](插件/Vim-multiple-cursors.md)
 
 
