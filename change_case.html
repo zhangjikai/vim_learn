@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>复制剪切粘贴 | vim学习</title>
+        <title>大小写转换 | vim学习</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -39,10 +39,10 @@
         
     
     
-    <link rel="next" href="./delete.html" />
+    <link rel="next" href="./vimrc.html" />
     
     
-    <link rel="prev" href="./use.html" />
+    <link rel="prev" href="./edit_binary.html" />
     
 
         
@@ -51,9 +51,9 @@
         
         
     <div class="book"
-        data-level="1.1"
-        data-chapter-title="复制剪切粘贴"
-        data-filepath="copy_paste.md"
+        data-level="1.10"
+        data-chapter-title="大小写转换"
+        data-filepath="change_case.md"
         data-basepath="."
         data-revision="Fri Apr 08 2016 15:44:58 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -107,7 +107,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1" data-path="copy_paste.html">
+        <li class="chapter " data-level="1.1" data-path="copy_paste.html">
             
                 
                     <a href="./copy_paste.html">
@@ -242,7 +242,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.10" data-path="change_case.html">
+        <li class="chapter active" data-level="1.10" data-path="change_case.html">
             
                 
                     <a href="./change_case.html">
@@ -421,97 +421,32 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x590D;&#x5236;&#x7C98;&#x8D34;">&#x590D;&#x5236;&#x7C98;&#x8D34;</h2>
-<h3 id="&#x7B80;&#x5355;&#x547D;&#x4EE4;">&#x7B80;&#x5355;&#x547D;&#x4EE4;</h3>
-<ul>
-<li><strong>y</strong> &#x590D;o&#x5236;</li>
-<li><strong>d</strong> &#x526A;&#x5207;, &#x548C;y&#x7684;&#x7528;&#x6CD5;&#x76F8;&#x540C;, &#x4F7F;&#x7528;d&#x66FF;&#x6362;&#x4E0B;&#x9762;&#x7684;y&#x5C31;&#x662F;&#x5BF9;&#x5E94;&#x7684;&#x526A;&#x5207;&#x547D;&#x4EE4;</li>
-<li><strong>p</strong> &#x7C98;&#x8D34;</li>
-<li><strong>yl</strong>  &#x590D;&#x5236;&#x5F53;&#x524D;&#x5B57;&#x7B26;</li>
-<li><strong>yh</strong>  &#x590D;&#x5236;&#x5F53;&#x524D;&#x5B57;&#x7B26;&#x7684;&#x524D;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;</li>
-<li><strong>ggyG</strong> &#x5168;&#x9009;&#x590D;&#x5236; </li>
-<li><strong>yy</strong>  &#x590D;&#x5236;&#x5F53;&#x524D;&#x884C;      </li>
-<li><strong>nyy</strong> &#x4ECE;&#x5F53;&#x524D;&#x884C;&#x5F00;&#x59CB;&#x590D;&#x5236;n&#x884C;, &#x4F8B;&#x5982;5yy&#x5C31;&#x662F;&#x590D;&#x5236;5&#x884C;</li>
-<li><strong>yw</strong> &#x590D;&#x5236;&#x5355;&#x8BCD;</li>
-<li><strong>nyw</strong> &#x4ECE;&#x5149;&#x6807;&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x5F80;&#x540E;&#x590D;&#x5236;n&#x4E2A;&#x5355;&#x8BCD;, &#x5982;2yw</li>
-<li><strong>y$</strong> &#x590D;&#x5236;&#x5149;&#x6807;&#x7684;&#x4F4D;&#x7F6E;&#x5230;&#x884C;&#x5C3E;</li>
-</ul>
-<h3 id="&#x590D;&#x6742;&#x64CD;&#x4F5C;">&#x590D;&#x6742;&#x64CD;&#x4F5C;</h3>
-<h4 id="&#x5FEB;&#x901F;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x7684;&#x67D0;&#x4E9B;&#x884C;">&#x5FEB;&#x901F;&#x590D;&#x5236;&#x6587;&#x4EF6;&#x7684;&#x67D0;&#x4E9B;&#x884C;</h4>
-<pre><code class="lang-bash">// &#x5C06;<span class="hljs-number">9</span>-<span class="hljs-number">15</span>&#x7684;&#x5185;&#x5BB9;&#x590D;&#x5236;&#x5230;<span class="hljs-number">16</span>&#x884C;(&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x5747;&#x53EF;), <span class="hljs-number">16</span>&#x884C;&#x4EE5;&#x4E0B;&#x7684;&#x5185;&#x5BB9;&#x4F1A;&#x81EA;&#x52A8;&#x4E0B;&#x79FB;
-:<span class="hljs-number">9</span>, <span class="hljs-number">15</span> copy <span class="hljs-number">16</span>  
-:<span class="hljs-number">9</span>, <span class="hljs-number">15</span> co <span class="hljs-number">16</span>
+                        <h2 id="&#x5927;&#x5C0F;&#x5199;&#x8F6C;&#x6362;">&#x5927;&#x5C0F;&#x5199;&#x8F6C;&#x6362;</h2>
+<pre><code>~          &#x5C06;&#x5149;&#x6807;&#x4E0B;&#x7684;&#x5B57;&#x6BCD;&#x6539;&#x53D8;&#x5927;&#x5C0F;&#x5199;
 
-// &#x5C06;<span class="hljs-number">9</span>-<span class="hljs-number">15</span> &#x884C;&#x5185;&#x5BB9;&#x526A;&#x5207;&#x5230;<span class="hljs-number">16</span>&#x884C;(&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x5747;&#x53EF;)
-:<span class="hljs-number">9</span>, <span class="hljs-number">15</span> move <span class="hljs-number">16</span>
-:<span class="hljs-number">9</span>, <span class="hljs-number">15</span> m <span class="hljs-number">16</span>
-</code></pre>
-<h4 id="&#x8BBE;&#x7F6E;&#x7C98;&#x8D34;&#x6A21;&#x5F0F;">&#x8BBE;&#x7F6E;&#x7C98;&#x8D34;&#x6A21;&#x5F0F;</h4>
-<p>&#x5728;&#x7C98;&#x8D34;&#x6A21;&#x5F0F;&#x4E0B;, &#x7C98;&#x8D34;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x7F29;&#x8FDB;&#x7684;, &#x56E0;&#x6B64;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x7C98;&#x8D34;&#x5185;&#x5BB9;&#x7684;&#x6837;&#x5F0F;,</p>
-<pre><code class="lang-bash">// &#x8FDB;&#x5165;&#x7C98;&#x8D34;&#x6A21;&#x5F0F;
-:<span class="hljs-built_in">set</span> paste
+3~         &#x5C06;&#x5149;&#x6807;&#x4F4D;&#x7F6E;&#x5F00;&#x59CB;&#x7684;3&#x4E2A;&#x5B57;&#x6BCD;&#x6539;&#x53D8;&#x5176;&#x5927;&#x5C0F;&#x5199;
 
-//&#x9000;&#x51FA;&#x7C98;&#x8D34;&#x6A21;&#x5F0F;
-:<span class="hljs-built_in">set</span> nopaste
-</code></pre>
-<p>&#x5728;.vimrc&#x4E2D;&#x52A0;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;, &#x8BBE;&#x7F6E;&#x5207;&#x6362;&#x7C98;&#x8D34;&quot;&#x6A21;&#x5F0F;&#x7684;&#x5FEB;&#x6377;&#x952E;&#x4E3A;<F3></F3></p>
-<pre><code class="lang-bash"><span class="hljs-built_in">set</span> pastetoggle=&lt;F3&gt;
-</code></pre>
-<h4 id="&#x4E0E;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;">&#x4E0E;&#x5176;&#x4ED6;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;</h4>
-<p>&#x524D;&#x9762;&#x52A0;&#x4E0A;<code>&quot;+</code>(&#x6CE8;&#x610F;&#x662F;&#x6709;&#x52A0;&#x53F7;&#x7684;)&#x5373;&#x53EF;, <code>&quot;</code>&#x8868;&#x793A;&#x4F7F;&#x7528;&#x5BC4;&#x5B58;&#x5668;&#x6807;&#x7B7E;, <code>+</code>&#x8868;&#x793A;&#x4F7F;&#x7528;&#x7CFB;&#x7EDF;&#x526A;&#x8D34;&#x677F;.</p>
-<pre><code class="lang-bash">// &#x590D;&#x5236;<span class="hljs-number">5</span>&#x884C;&#x5230;&#x7CFB;&#x7EDF;&#x7C98;&#x8D34;&#x677F;
-<span class="hljs-string">&quot;+5yy
+g~~        &#x6539;&#x53D8;&#x5F53;&#x524D;&#x884C;&#x5B57;&#x6BCD;&#x7684;&#x5927;&#x5C0F;&#x5199;
 
-// &#x590D;&#x5236;&#x5F53;&#x524D;&#x884C;&#x5230;&#x7CFB;&#x7EDF;&#x7C98;&#x8D34;&#x677F;
-&quot;</span>+yy
+U          &#x5C06;&#x53EF;&#x89C6;&#x6A21;&#x5F0F;&#x4E0B;&#x9009;&#x62E9;&#x7684;&#x5B57;&#x6BCD;&#x5168;&#x6539;&#x6210;&#x5927;&#x5199;&#x5B57;&#x6BCD;
 
-// &#x590D;&#x5236;&#x5168;&#x90E8;&#x5185;&#x5BB9;&#x5230;&#x7CFB;&#x7EDF;&#x7C98;&#x8D34;&#x677F;
-gg<span class="hljs-string">&quot;+yG
+u          &#x5C06;&#x53EF;&#x89C6;&#x6A21;&#x5F0F;&#x4E0B;&#x9009;&#x62E9;&#x7684;&#x5B57;&#x6BCD;&#x5168;&#x6539;&#x6210;&#x5C0F;&#x5199;
 
-// &#x7C98;&#x8D34;&#x5F53;&#x524D;&#x5185;&#x5BB9;
-&quot;</span>+p
-</code></pre>
-<p>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x5185;&#x5BB9;&#x590D;&#x5236;&#x5230;&#x7CFB;&#x7EDF;&#x526A;&#x8D34;&#x677F;, &#x4E5F;&#x53EF;&#x4EE5;&#x4ECE;&#x7CFB;&#x7EDF;&#x526A;&#x8D34;&#x677F;&#x4E2D;&#x83B7;&#x5F97;&#x6570;&#x636E;.<br>&#x5728;Linux&#x7CFB;&#x7EDF;&#x4E2D;&#x9664;&#x4E86;&#x7CFB;&#x7EDF;&#x7C98;&#x8D34;&#x677F;, &#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x53EB;&#x505A;&#x9009;&#x62E9;&#x7F13;&#x51B2;&#x533A;, &#x5B83;&#x548C;&#x7CFB;&#x7EDF;&#x526A;&#x8D34;&#x677F;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x9009;&#x62E9;&#x7F13;&#x51B2;&#x533A;&#x65F6;&#x662F;&#x5B9E;&#x65F6;&#x7684;,
-&#x5F53;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x4E86;&#x5185;&#x5BB9;&#x4E4B;&#x540E;, &#x5185;&#x5BB9;&#x5C31;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x9009;&#x62E9;&#x7F13;&#x51B2;&#x533A;&#x91CC;&#x4E86;, &#x8FD9;&#x610F;&#x5473;&#x7740;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x9009;&#x62E9;&#x7F13;&#x51B2;&#x533A;&#x5C31;&#x4E0D;&#x7528;&#x518D;ctrl+c&#x590D;&#x5236;&#x4E86;,
-&#x53EA;&#x9700;&#x7528;&#x9F20;&#x6807;&#x9009;&#x62E9;, &#x6709;&#x4E86;&#x5185;&#x5BB9;&#x4E4B;&#x540E;&#x4E0B;&#x4E00;&#x6B65;&#x5C31;&#x662F;&#x7C98;&#x8D34;&#x4E86;, &#x4F7F;&#x7528;<code>Shift</code>+<code>Insert</code>&#x6216;&#x8005;<strong>&#x9F20;&#x6807;&#x4E2D;&#x952E;</strong>&#x5C31;&#x53EF;&#x4EE5;&#x7C98;&#x8D34;&#x9009;&#x62E9;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x5185;&#x5BB9;, 
-&#x5728;vim&#x4E2D;&#x4F7F;&#x7528;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x90FD;&#x53EF;&#x4EE5;, &#x4F46;&#x662F;&#x5728;gedit&#x7B49;gui&#x7F16;&#x8F91;&#x5668;&#x4E2D;, &#x53EA;&#x80FD;&#x901A;&#x8FC7;<strong>&#x9F20;&#x6807;&#x4E2D;&#x952E;</strong>&#x8FDB;&#x884C;&#x7C98;&#x8D34;.<br>&#x4E0B;&#x9762;&#x662F;&#x5177;&#x4F53;&#x6D41;&#x7A0B;:  </p>
-<ol>
-<li><p>&#x9009;&#x62E9;, &#x5728;vim&#x4E2D;&#x4E0B;&#x9762;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x5747;&#x53EF;, &#x5728;&#x5176;&#x4ED6;&#x8F6F;&#x4EF6;&#x4E2D;&#x8C8C;&#x4F3C;&#x53EA;&#x53EF;&#x4EE5;&#x7528;&#x9F20;&#x6807;&#x9009;&#x62E9;</p>
-<ul>
-<li>&#x5728;&#x4E00;&#x822C;&#x6A21;&#x5F0F;&#x4E0B;&#x6309;<code>v</code>&#x6216;&#x8005; <code>Ctrl</code> + <code>v</code>, &#x8FDB;&#x5165;&#x53EF;&#x89C6;&#x6A21;&#x5F0F;, &#x6B64;&#x65F6;&#x5C31;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5185;&#x5BB9;&#x4E86;, &#x9009;&#x62E9;&#x5B8C;&#x540E;&#x6309;ESC&#x9000;&#x51FA;&#x53EF;&#x89C6;&#x6A21;&#x5F0F;</li>
-<li>&#x4F7F;&#x7528;&#x9F20;&#x6807;&#x76F4;&#x63A5;&#x9009;&#x62E9;(&#x6211;&#x8BD5;&#x7684;&#x662F;&#x76F4;&#x63A5;&#x9009;&#x62E9;&#x5C31;&#x884C;,&#x4E0D;&#x9700;&#x8981;&#x914D;&#x7F6E;, &#x5982;&#x679C;&#x76F4;&#x63A5;&#x9009;&#x62E9;&#x4E0D;&#x884C;, &#x5728;.vimrc&#x4E2D;&#x52A0;&#x4E0A;<code>set mouse=v</code> )</li>
-</ul>
-</li>
-<li><p>&#x7C98;&#x8D34;  </p>
-<ul>
-<li><code>Shift</code> + <code>Insert</code>(&#x7F16;&#x8F91;&#x6A21;&#x5F0F;&#x4E0B;)</li>
-<li><strong>&#x9F20;&#x6807;&#x4E2D;&#x952E;</strong></li>
-<li><code>&quot;*p</code>(&#x4E00;&#x822C;&#x6A21;&#x5F0F;&#x4E0B;)</li>
-</ul>
-</li>
-</ol>
-<p>&#x5982;&#x679C;&#x8981;&#x66F4;&#x52A0;&#x65B9;&#x4FBF;, &#x53EF;&#x4EE5;&#x4FEE;&#x6539;vim&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x5BC4;&#x5B58;&#x5668;&#x6539;&#x4E3A;&#x9009;&#x62E9;&#x7F13;&#x51B2;&#x533A;, &#x5728;.vimrc&#x6587;&#x4EF6;&#x4E2D;&#x52A0;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x5185;&#x5BB9;:</p>
-<pre><code class="lang-bash"><span class="hljs-built_in">set</span> clipboard = unnamed
-</code></pre>
-<p>&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;y, p&#x548C;&#x7CFB;&#x7EDF;&#x9009;&#x62E9;&#x7F13;&#x51B2;&#x533A;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x4E86;.
-&#x5373;&#x9009;&#x62E9;&#x5B8C;&#x540E;&#x76F4;&#x63A5;&#x6309;p&#x5373;&#x53EF;</p>
-<hr>
-<p>&#x534E;&#x4E3D;&#x7684;&#x5206;&#x5272;&#x7EBF;, &#x4E0B;&#x9762;&#x8865;&#x5145;&#x51E0;&#x70B9;</p>
-<ol>
-<li>&#x5982;&#x679C;&#x8BBE;&#x7F6E;y&#x548C;p&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7CFB;&#x7EDF;&#x526A;&#x8D34;&#x677F;, &#x5219;&#x52A0;&#x5165;<pre><code class="lang-bash"><span class="hljs-built_in">set</span> clipboard=unnamedplus
-</code></pre>
-</li>
-<li>&#x5728;&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x4E0B;&#x8F93;&#x5165; <code>reg</code>&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5BC4;&#x5B58;&#x5668;, &#x5982;&#x679C;&#x6CA1;&#x6709;<code>*</code>&#x548C;<code>+</code>&#x5BC4;&#x5B58;&#x5668;, &#x8F93;&#x5165;&#x4E0B;&#x9762;&#x547D;&#x4EE4;&#x5B89;&#x88C5;<pre><code class="lang-bash">sudo apt-get install vim-gnome
-</code></pre>
-</li>
-<li>&#x4F7F;&#x7528;&#x793A;&#x4F8B;<pre><code class="lang-bash">// &#x5168;&#x9009;
-ggyG  
-// &#x7C98;&#x8D34;&#x5230;&#x5176;&#x4ED6;&#x5730;&#x65B9;
-&#x9F20;&#x6807;&#x4E2D;&#x952E;
-</code></pre>
-</li>
-<li>&#x672C;&#x8282;&#x53C2;&#x8003;&#x81EA; <a href="http://www.worldhello.net/2010/12/08/2190.html" target="_blank">Vim&#x590D;&#x5236;&#x7C98;&#x8D34;&#x63A2;&#x79D8;</a></li>
-</ol>
+gUU        &#x5C06;&#x5F53;&#x524D;&#x884C;&#x7684;&#x5B57;&#x6BCD;&#x6539;&#x6210;&#x5927;&#x5199;
+
+3gUU       &#x5C06;&#x4ECE;&#x5149;&#x6807;&#x5F00;&#x59CB;&#x5230;&#x4E0B;&#x9762;3&#x884C;&#x5B57;&#x6BCD;&#x6539;&#x6210;&#x5927;&#x5199;
+
+guu        &#x5C06;&#x5F53;&#x524D;&#x884C;&#x7684;&#x5B57;&#x6BCD;&#x5168;&#x6539;&#x6210;&#x5C0F;&#x5199;
+
+gUw        &#x5C06;&#x5149;&#x6807;&#x4E0B;&#x7684;&#x5355;&#x8BCD;&#x6539;&#x6210;&#x5927;&#x5199;&#x3002;
+
+guw        &#x5C06;&#x5149;&#x6807;&#x4E0B;&#x7684;&#x5355;&#x8BCD;&#x6539;&#x6210;&#x5C0F;&#x5199;&#x3002;
+
+ggguG/gggUG &#x5C06;&#x6574;&#x7BC7;&#x6587;&#x7AE0;&#x53D8;&#x4E3A;&#x5C0F;&#x5199;/&#x5927;&#x5199;
+
+:h ~       &#x67E5;&#x770B;&#x66F4;&#x591A;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;
+</code></pre><hr>
+<p><a href="http://www.linuxsong.org/2010/09/vim-convert-capitalization/" target="_blank">&#x539F;&#x6587;&#x5730;&#x5740;</a></p>
 
                     
                     </section>
@@ -522,10 +457,10 @@ ggyG
         </div>
 
         
-        <a href="./use.html" class="navigation navigation-prev " aria-label="Previous page: 使用"><i class="fa fa-angle-left"></i></a>
+        <a href="./edit_binary.html" class="navigation navigation-prev " aria-label="Previous page: 操作二进制文件"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./delete.html" class="navigation navigation-next " aria-label="Next page: 删除"><i class="fa fa-angle-right"></i></a>
+        <a href="./vimrc.html" class="navigation navigation-next " aria-label="Next page: vimrc配置"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
