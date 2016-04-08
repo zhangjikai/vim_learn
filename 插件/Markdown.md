@@ -1,5 +1,11 @@
 # markdown
+
 ## 安装
+在`~/.vimrc`中加入:
+```
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+```
 [github地址](https://github.com/plasticboy/vim-markdown)
 
 ## 配置

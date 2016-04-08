@@ -1,4 +1,9 @@
 ## MiniBufExplorer
+### 安装
+```
+Bundle 'fholgado/minibufexpl.vim'
+```
+[github地址](https://github.com/fholgado/minibufexpl.vim)
 ### 快捷键
 
 * __Tab __ : 向前循环切换到每个buffer上
