@@ -39,10 +39,10 @@
         
     
     
-    <link rel="next" href="./cha_jian.html" />
+    <link rel="next" href="./vimrcfile.html" />
     
     
-    <link rel="prev" href="./change_case.html" />
+    <link rel="prev" href="./输入特殊字符.html" />
     
 
         
@@ -51,11 +51,11 @@
         
         
     <div class="book"
-        data-level="1.11"
+        data-level="1.12"
         data-chapter-title="vimrc配置"
         data-filepath="vimrc.md"
         data-basepath="."
-        data-revision="Fri Apr 08 2016 16:03:07 GMT+0800 (CST)"
+        data-revision="Fri May 06 2016 20:35:19 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -257,16 +257,46 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.11" data-path="vimrc.html">
+        <li class="chapter " data-level="1.11" data-path="输入特殊字符.html">
+            
+                
+                    <a href="./输入特殊字符.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        输入特殊字符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="vimrc.html">
             
                 
                     <a href="./vimrc.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.11.</b>
+                            <b>1.12.</b>
                         
                         vimrc配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="vimrcfile.html">
+            
+                
+                    <a href="./vimrcfile.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.13.</b>
+                        
+                        vimrc文件
                     </a>
             
             
@@ -421,45 +451,36 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="vimrc&#x914D;&#x7F6E;">vimrc&#x914D;&#x7F6E;</h1>
-<pre><code>set number                  &quot; &#x663E;&#x793A;&#x884C;&#x53F7;
-set cursorline              &quot; &#x7A81;&#x51FA;&#x663E;&#x793A;&#x5F53;&#x524D;&#x884C;
-
-&quot;set cursorcolumn             &quot; &#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x5F53;&#x524D;&#x884C;/&#x5217;
-set shiftwidth=4            &quot; &#x8BBE;&#x5B9A; &lt;&lt; &#x548C; &gt;&gt; &#x547D;&#x4EE4;&#x79FB;&#x52A8;&#x65F6;&#x7684;&#x5BBD;&#x5EA6;&#x4E3A; 4
-set softtabstop=4           &quot; &#x4F7F;&#x5F97;&#x6309;&#x9000;&#x683C;&#x952E;&#x65F6;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x5220;&#x6389; 4 &#x4E2A;&#x7A7A;&#x683C;
-set tabstop=4               &quot; &#x8BBE;&#x5B9A; tab &#x957F;&#x5EA6;&#x4E3A; 4
-set autochdir               &quot; &#x81EA;&#x52A8;&#x5207;&#x6362;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E3A;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x76EE;&#x5F55;
-
-&quot;color solarized
-set ruler                      &quot; &#x663E;&#x793A;&#x5149;&#x6807;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;
-set nowrap                     &quot; &#x7981;&#x6B62;&#x6298;&#x884C;
-syntax enable                 &quot; &#x5F00;&#x542F;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;&#x529F;&#x80FD;
-syntax on                     &quot; &#x5141;&#x8BB8;&#x7528;&#x6307;&#x5B9A;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;&#x914D;&#x8272;&#x65B9;&#x6848;&#x66FF;&#x6362;&#x9ED8;&#x8BA4;&#x65B9;&#x6848;
-&quot;colorscheme  anderson  &quot; &#x8BBE;&#x5B9A;&#x914D;&#x8272;&#x65B9;&#x6848;
-set smartindent             &quot; &#x5F00;&#x542F;&#x65B0;&#x884C;&#x65F6;&#x4F7F;&#x7528;&#x667A;&#x80FD;&#x81EA;&#x52A8;&#x7F29;&#x8FDB;
-set laststatus=2            &quot; &#x663E;&#x793A;&#x72B6;&#x6001;&#x680F; (&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 1, &#x65E0;&#x6CD5;&#x663E;&#x793A;&#x72B6;&#x6001;&#x680F;)
-&quot;set foldenable              &quot; &#x5F00;&#x59CB;&#x6298;&#x53E0;
-&quot;set foldmethod=syntax       &quot; &#x8BBE;&#x7F6E;&#x8BED;&#x6CD5;&#x6298;&#x53E0;
-
-&quot;&#x8BBE;&#x7F6E;terminal &#x4F7F;&#x7528;gui&#x989C;&#x8272;
-&quot;&quot; IMPORTANT: Uncomment one of the following lines to force
-&quot; using 256 colors (or 88 colors) if your terminal supports it,
-&quot; &quot; but does not automatically use 256 colors by default.
- set t_Co=256
-&quot; &quot;set t_Co=88
- let g:CSApprox_attr_map = { &apos;bold&apos; : &apos;bold&apos;, &apos;italic&apos; : &apos;&apos;, &apos;sp&apos; : &apos;&apos; }
- colorscheme spring
- hi CursorLine   cterm=NONE ctermbg=lightgray ctermfg=black  guifg=white
-
-&quot;&#x81EA;&#x52A8;&#x4FDD;&#x5B58;
-let g:auto_save = 1
-let g:auto_save_no_updatetime = 1 
-let g:auto_save_in_insert_mode = 1
-
-&quot;&#x5F00;&#x542F;&#x9F20;&#x6807;&#x529F;&#x80FD;, a&#x8868;&#x793A;&#x5728;&#x6240;&#x6709;&#x6A21;&#x5F0F;&#x4E0B;
-set mouse=a
+                        <h2 id="vimrc&#x914D;&#x7F6E;">vimrc&#x914D;&#x7F6E;</h2>
+<ul>
+<li><a href="#&#x8BBE;&#x7F6E;&#x6298;&#x53E0;">&#x8BBE;&#x7F6E;&#x6298;&#x53E0;</a></li>
+<li><a href="#&#x6B63;&#x5E38;&#x6A21;&#x5F0F;&#x4E0B;&#x63D2;&#x5165;&#x7A7A;&#x683C;">&#x6B63;&#x5E38;&#x6A21;&#x5F0F;&#x4E0B;&#x63D2;&#x5165;&#x7A7A;&#x683C;</a></li>
+</ul>
+<h4 id="&#x8BBE;&#x7F6E;&#x6298;&#x53E0;">&#x8BBE;&#x7F6E;&#x6298;&#x53E0;</h4>
+<p><strong>&#x914D;&#x7F6E;</strong>  </p>
+<pre><code>&quot; &#x57FA;&#x4E8E;&#x7F29;&#x8FDB;
+&quot;set foldmethod=indent
+&quot; &#x57FA;&#x4E8E;&#x8BED;&#x6CD5;
+set foldmethod=syntax
+&quot; &#x542F;&#x52A8;vim&#x65F6;&#x5173;&#x95ED;&#x6298;&#x53E0;&#x4EE3;&#x7801;
+set nofoldernable
+&quot; &#x4F7F;&#x7528;&#x7A7A;&#x683C;&#x6765;&#x5F00;&#x5173;&#x6298;&#x53E0;
+nnoremap &lt;space&gt; @=((foldclosed(line(&apos;.&apos;)) &lt; 0) ? &apos;zc&apos; : &apos;zo&apos;)&lt;CR&gt;
+</code></pre><p><strong>&#x5FEB;&#x6377;&#x952E;</strong></p>
+<ul>
+<li><code>zc</code>: &#x5173;&#x95ED;&#x6298;&#x53E0;</li>
+<li><code>zo</code>: &#x6253;&#x5F00;&#x6298;&#x53E0;</li>
+<li><code>za</code>: &#x6253;&#x5F00;&#x6216;&#x8005;&#x5173;&#x95ED;&#x5F53;&#x524D;&#x6298;&#x53E0;</li>
+<li><code>zM</code>: &#x5173;&#x95ED;&#x6240;&#x6709;&#x6298;&#x53E0;</li>
+<li><code>zR</code>: &#x6253;&#x5F00;&#x6240;&#x6709;&#x6298;&#x53E0;</li>
+</ul>
+<h4 id="&#x6B63;&#x5E38;&#x6A21;&#x5F0F;&#x4E0B;&#x63D2;&#x5165;&#x7A7A;&#x683C;">&#x6B63;&#x5E38;&#x6A21;&#x5F0F;&#x4E0B;&#x63D2;&#x5165;&#x7A7A;&#x683C;</h4>
+<p><strong>&#x914D;&#x7F6E;</strong></p>
+<pre><code class="lang-bash">nmap &lt;silent&gt; to :call append(<span class="hljs-string">&apos;.&apos;</span>, <span class="hljs-string">&apos;&apos;</span>)&lt;CR&gt;j
+nmap &lt;silent&gt; tO :call append(line(<span class="hljs-string">&apos;.&apos;</span>)-<span class="hljs-number">1</span>, <span class="hljs-string">&apos;&apos;</span>)&lt;CR&gt;k
 </code></pre>
+<p><strong>&#x5FEB;&#x6377;&#x952E;</strong><br>&#x4F7F;&#x7528; <code>to</code> &#x6216;&#x8005; <code>tO</code> &#x7EC4;&#x5408;&#x952E;</p>
+
                     
                     </section>
                 
@@ -469,10 +490,10 @@ set mouse=a
         </div>
 
         
-        <a href="./change_case.html" class="navigation navigation-prev " aria-label="Previous page: 大小写转换"><i class="fa fa-angle-left"></i></a>
+        <a href="./输入特殊字符.html" class="navigation navigation-prev " aria-label="Previous page: 输入特殊字符"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./cha_jian.html" class="navigation navigation-next " aria-label="Next page: 插件"><i class="fa fa-angle-right"></i></a>
+        <a href="./vimrcfile.html" class="navigation navigation-next " aria-label="Next page: vimrc文件"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
@@ -504,13 +525,9 @@ set mouse=a
     <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
     
 
-    
-    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
-    
-
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"search-pro":{"cutWordLib":"nodejieba","defineWord":["vim"]},"github":{"url":"https://github.com/zhangjikai/vim_learn"},"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"duoshuo":{"short_name":"zhangjkblog","theme":"default"},"baidu":{"token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sitemap":{"hostname":"http://vim.zhangjikai.com"},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    var config = {"search-pro":{"cutWordLib":"nodejieba","defineWord":["vim"]},"github":{"url":"https://github.com/zhangjikai/vim_learn"},"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"duoshuo":{"short_name":"zhangjkblog","theme":"default"},"baidu":{"token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sitemap":{"hostname":"http://vim.zhangjikai.com"},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}};
     gitbook.start(config);
 });
 </script>

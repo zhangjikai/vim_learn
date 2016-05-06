@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Markdown | vim学习</title>
+        <title>vimrc文件 | vim学习</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -39,10 +39,10 @@
         
     
     
-    <link rel="next" href="./minibufexplorer.html" />
+    <link rel="next" href="./cha_jian.html" />
     
     
-    <link rel="prev" href="./vundle.html" />
+    <link rel="prev" href="./vimrc.html" />
     
 
         
@@ -51,9 +51,9 @@
         
         
     <div class="book"
-        data-level="2.2"
-        data-chapter-title="Markdown"
-        data-filepath="markdown.md"
+        data-level="1.13"
+        data-chapter-title="vimrc文件"
+        data-filepath="vimrcfile.md"
         data-basepath="."
         data-revision="Fri May 06 2016 20:35:19 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -287,7 +287,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="vimrcfile.html">
+        <li class="chapter active" data-level="1.13" data-path="vimrcfile.html">
             
                 
                     <a href="./vimrcfile.html">
@@ -338,7 +338,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2" data-path="markdown.html">
+        <li class="chapter " data-level="2.2" data-path="markdown.html">
             
                 
                     <a href="./markdown.html">
@@ -451,16 +451,237 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="markdown">markdown</h1>
-<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
-<p>&#x5728;<code>~/.vimrc</code>&#x4E2D;&#x52A0;&#x5165;:</p>
-<pre><code>Plugin &apos;godlygeek/tabular&apos;
+                        <h2 id="vimrc&#x6587;&#x4EF6;">vimrc&#x6587;&#x4EF6;</h2>
+<pre><code class="lang-vimrc">set nocompatible              &quot; be iMproved, required
+filetype off                  &quot; required
+
+&quot; set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+&quot; alternatively, pass a path where Vundle should install plugins
+&quot;call vundle#begin(&apos;~/some/path/here&apos;)
+
+&quot; let Vundle manage Vundle, required
+Plugin &apos;VundleVim/Vundle.vim&apos;
+Plugin &apos;Valloric/YouCompleteMe&apos;
+&quot;&#x81EA;&#x52A8;&#x8865;&#x5168;
+Bundle &apos;Raimondi/delimitMate&apos;
+filetype plugin indent on
+
+&quot; The following are examples of different formats supported.
+&quot; Keep Plugin commands between vundle#begin/end.
+&quot; plugin on GitHub repo
+&quot;Plugin &apos;tpope/vim-fugitive&apos;
+&quot; plugin from http://vim-scripts.org/vim/scripts.html
+&quot;Plugin &apos;L9&apos;
+&quot; Git plugin not hosted on GitHub
+&quot;Plugin &apos;git://git.wincent.com/command-t.git&apos;
+&quot; git repos on your local machine (i.e. when working on your own plugin)
+&quot;Plugin &apos;file:///home/gmarik/path/to/plugin&apos;
+&quot; The sparkup vim script is in a subdirectory of this repo called vim.
+&quot; Pass the path to set the runtimepath properly.
+&quot;Plugin &apos;rstacruz/sparkup&apos;, {&apos;rtp&apos;: &apos;vim/&apos;}
+&quot; Avoid a name conflict with L9
+&quot;Plugin &apos;user/L9&apos;, {&apos;name&apos;: &apos;newL9&apos;}
+
+&quot; All of your Plugins must be added before the following line
+call vundle#end()            &quot; required
+filetype plugin indent on    &quot; required
+&quot; To ignore plugin indent changes, instead use:
+&quot;filetype plugin on
+&quot;
+&quot; Brief help
+&quot; :PluginList       - lists configured plugins
+&quot; :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+&quot; :PluginSearch foo - searches for foo; append `!` to refresh local cache
+&quot; :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+&quot;
+&quot; see :h vundle for more details or wiki for FAQ
+&quot; Put your non-Plugin stuff after this line
+
+&quot;markdown
+Plugin &apos;godlygeek/tabular&apos;
 Plugin &apos;plasticboy/vim-markdown&apos;
-</code></pre><p><a href="https://github.com/plasticboy/vim-markdown" target="_blank">github&#x5730;&#x5740;</a></p>
-<h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2>
-<pre><code>&quot; &#x8BBE;&#x7F6E;&#x4F7F;&#x7528;markdown&#x63D2;&#x4EF6;&#x7684;&#x7C7B;&#x578B;&#x4EE5;&#x53CA;&#x4E0D;&#x81EA;&#x52A8;&#x6298;&#x53E0;&#x4EE3;&#x7801;
+Plugin &apos;terryma/vim-multiple-cursors&apos;
+
+
+set number                  &quot; &#x663E;&#x793A;&#x884C;&#x53F7;
+set cursorline              &quot; &#x7A81;&#x51FA;&#x663E;&#x793A;&#x5F53;&#x524D;&#x884C;
+
+
+&quot;set guicursor=i:block-iCursor-blinkon0,v:block-vCursor
+&quot;set cursorcolumn             &quot; &#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x5F53;&#x524D;&#x884C;/&#x5217;
+set shiftwidth=4            &quot; &#x8BBE;&#x5B9A; &lt;&lt; &#x548C; &gt;&gt; &#x547D;&#x4EE4;&#x79FB;&#x52A8;&#x65F6;&#x7684;&#x5BBD;&#x5EA6;&#x4E3A; 4
+set softtabstop=4           &quot; &#x4F7F;&#x5F97;&#x6309;&#x9000;&#x683C;&#x952E;&#x65F6;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x5220;&#x6389; 4 &#x4E2A;&#x7A7A;&#x683C;
+set tabstop=4               &quot; &#x8BBE;&#x5B9A; tab &#x957F;&#x5EA6;&#x4E3A; 4
+set expandtab               &quot; &#x52A0;&#x4E0A;&#x8FD9;&#x53E5;&#x9632;&#x6B62;&#x4EE3;&#x7801;&#x590D;&#x5236;&#x5230;&#x522B;&#x7684;&#x5730;&#x65F6;tab&#x53D8;&#x4E3A;8&#x4E2A;&#x7A7A;&#x683C;   
+set autochdir               &quot; &#x81EA;&#x52A8;&#x5207;&#x6362;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E3A;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x76EE;&#x5F55;
+
+&quot;color solarized
+set ruler                      &quot; &#x663E;&#x793A;&#x5149;&#x6807;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;
+set nowrap                     &quot; &#x7981;&#x6B62;&#x6298;&#x884C;
+syntax enable                 &quot; &#x5F00;&#x542F;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;&#x529F;&#x80FD;
+syntax on                     &quot; &#x5141;&#x8BB8;&#x7528;&#x6307;&#x5B9A;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;&#x914D;&#x8272;&#x65B9;&#x6848;&#x66FF;&#x6362;&#x9ED8;&#x8BA4;&#x65B9;&#x6848;
+&quot;colorscheme  anderson  &quot; &#x8BBE;&#x5B9A;&#x914D;&#x8272;&#x65B9;&#x6848;
+&quot;colorscheme  spring     &quot; &#x8BBE;&#x5B9A;&#x914D;&#x8272;&#x65B9;&#x6848;
+&quot;color spring
+set smartindent             &quot; &#x5F00;&#x542F;&#x65B0;&#x884C;&#x65F6;&#x4F7F;&#x7528;&#x667A;&#x80FD;&#x81EA;&#x52A8;&#x7F29;&#x8FDB;
+set laststatus=2            &quot; &#x663E;&#x793A;&#x72B6;&#x6001;&#x680F; (&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 1, &#x65E0;&#x6CD5;&#x663E;&#x793A;&#x72B6;&#x6001;&#x680F;)
+&quot;set foldenable              &quot; &#x5F00;&#x59CB;&#x6298;&#x53E0;
+&quot;set foldmethod=syntax       &quot; &#x8BBE;&#x7F6E;&#x8BED;&#x6CD5;&#x6298;&#x53E0;
+
+set mouse=a
+
+&quot;&#x8BBE;&#x7F6E;&#x8865;&#x5168;&#x6587;&#x4EF6;&#x540D;
+set wildmode=list:longest
+
+&quot;hi preproc        guifg=blue        ctermfg=blue
+
+
+&quot; MiniBufExplorer     &#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x5207;&#x6362; &#x53EF;&#x4F7F;&#x7528;&#x9F20;&#x6807;&#x53CC;&#x51FB;&#x76F8;&#x5E94;&#x6587;&#x4EF6;&#x540D;&#x8FDB;&#x884C;&#x5207;&#x6362;
+let g:miniBufExplMapWindowNavVim=1
+let g:miniBufExplMapWindowNavArrows=1
+let g:miniBufExplMapCTabSwitchBufs=1
+let g:miniBufExplModSelTarget=1
+
+map <F7> 20zl &quot; Scroll 20 characters to the right
+map <F8> 20zh &quot; Scroll 20 characters to the left
+
+&quot;au VimEnter * if line(&apos;$&apos;) &gt; &amp;lines | set go+=r | else | set go-=r | endif
+&quot;au VimResized * if line(&apos;$&apos;) &gt; &amp;lines | set go+=r | else | set go-=r | endif
+
+&quot; &#x914D;&#x7F6E;&#x591A;&#x8BED;&#x8A00;&#x73AF;&#x5883;
+if has(&quot;multi_byte&quot;)
+    &quot; UTF-8 &#x7F16;&#x7801;
+    set encoding=utf-8
+    set termencoding=utf-8
+    set formatoptions+=mM
+    set fencs=utf-8,gbk
+    if v:lang =~? &apos;^\(zh\)\|\(ja\)\|\(ko\)&apos;
+        set ambiwidth=double
+    endif
+    if has(&quot;win32&quot;)
+        source $VIMRUNTIME/delmenu.vim
+        source $VIMRUNTIME/menu.vim
+        language messages zh_CN.utf-8
+    endif
+else
+    echoerr &quot;Sorry, this version of (g)vim was not compiled with +multi_byte&quot;
+endif
+
+&quot;&#x914D;&#x7F6E;taglist
+let Tlist_Show_One_File=1   &quot;&#x53EA;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x7684;tag
+let Tlist_Exit_OnlyWindow=1 
+let Tlist_Sort_Type=&quot;name&quot; &quot;&#x6309;tag&#x540D;&#x79F0;&#x6392;&#x5E8F;
+let Tlist_Use_SingleClick=1  &quot;&#x5355;&#x51FB;
+let Tlist_Use_Right_Window=1 &quot;&#x628A;taglist&#x7A97;&#x53E3;&#x653E;&#x5728;&#x5C4F;&#x5E55;&#x7684;&#x53F3;&#x4FA7;&#xFF0C;&#x7F3A;&#x7701;&#x5728;&#x5DE6;&#x4FA7; 
+let Tlist_Show_Menu=1 &quot;&#x663E;&#x793A;taglist&#x83DC;&#x5355;
+map <silent> <F9> :TlistToggle<cr> 
+
+
+&quot;&#x914D;&#x7F6E;ctags&#x5FEB;&#x6377;&#x952E;
+map <C-F12> :!ctags --c-kinds=+lpx -R .<CR>  
+
+&quot;&#x914D;&#x7F6E;WinManager
+let g:winManagerWindowLayout=&apos;FileExplorer&apos;
+nmap wm :WMToggle<cr>
+
+&quot;&#x8BBE;&#x7F6E;cscope
+:set cscopequickfix=s-,c-,d-,i-,t-,e-
+
+&quot;&#x8BBE;&#x7F6E;MiniBufExplorer
+let g:miniBufExplMapWindowNavArrows = 1
+
+&quot;&#x5934;&#x6587;&#x4EF6;&#x4E92;&#x6362;
+nnoremap <silent> <F12> :A<CR>
+
+let g:ycm_global_ycm_extra_conf = &apos;/home/zhangjikai/.vim/bundle/third_party/ycmd/cpp/ycm/ycm.c.py&apos;
+let g:ycm_semantic_triggers = {}
+let g:ycm_semantic_triggers.c = [&apos;-&gt;&apos;, &apos;.&apos;, &apos;(&apos;, &apos;[&apos;, &apos;&amp;&apos;]
+let g:ycm_collect_identifiers_from_tags_files=1
+let g:ycm_min_num_of_chars_for_completion=3
+let g:ycm_seed_identifiers_with_syntax=1
+
+
+&quot; YouCompleteMe &#x529F;&#x80FD;  
+&quot; &#x8865;&#x5168;&#x529F;&#x80FD;&#x5728;&#x6CE8;&#x91CA;&#x4E2D;&#x540C;&#x6837;&#x6709;&#x6548;  
+let g:ycm_complete_in_comments=0 
+&quot; &#x5141;&#x8BB8; vim &#x52A0;&#x8F7D; .ycm_extra_conf.py &#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x518D;&#x63D0;&#x793A;  
+let g:ycm_confirm_extra_conf=0
+&quot; &#x5F00;&#x542F; YCM &#x57FA;&#x4E8E;&#x6807;&#x7B7E;&#x5F15;&#x64CE;  
+let g:ycm_collect_identifiers_from_tags_files=1  
+&quot; &#x5F15;&#x5165; C++ &#x6807;&#x51C6;&#x5E93;tags&#xFF0C;&#x8FD9;&#x4E2A;&#x6CA1;&#x6709;&#x4E5F;&#x6CA1;&#x5173;&#x7CFB;&#xFF0C;&#x53EA;&#x8981;.ycm_extra_conf.py&#x6587;&#x4EF6;&#x4E2D;&#x6307;&#x5B9A;&#x4E86;&#x6B63;&#x786E;&#x7684;&#x6807;&#x51C6;&#x5E93;&#x8DEF;&#x5F84;  
+set tags+=/data/misc/software/misc./vim/stdcpp.tags  
+&quot; YCM &#x96C6;&#x6210; OmniCppComplete &#x8865;&#x5168;&#x5F15;&#x64CE;&#xFF0C;&#x8BBE;&#x7F6E;&#x5176;&#x5FEB;&#x6377;&#x952E;  
+inoremap <leader>; <C-x><C-o>  
+&quot; &#x8865;&#x5168;&#x5185;&#x5BB9;&#x4E0D;&#x4EE5;&#x5206;&#x5272;&#x5B50;&#x7A97;&#x53E3;&#x5F62;&#x5F0F;&#x51FA;&#x73B0;&#xFF0C;&#x53EA;&#x663E;&#x793A;&#x8865;&#x5168;&#x5217;&#x8868;  
+set completeopt-=preview  
+&quot; &#x4ECE;&#x7B2C;&#x4E00;&#x4E2A;&#x952E;&#x5165;&#x5B57;&#x7B26;&#x5C31;&#x5F00;&#x59CB;&#x7F57;&#x5217;&#x5339;&#x914D;&#x9879;  
+let g:ycm_min_num_of_chars_for_completion=1 
+&quot; &#x7981;&#x6B62;&#x7F13;&#x5B58;&#x5339;&#x914D;&#x9879;&#xFF0C;&#x6BCF;&#x6B21;&#x90FD;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x5339;&#x914D;&#x9879;  
+let g:ycm_cache_omnifunc=0  
+&quot; &#x8BED;&#x6CD5;&#x5173;&#x952E;&#x5B57;&#x8865;&#x5168;              
+let g:ycm_seed_identifiers_with_syntax=1  
+&quot; &#x4FEE;&#x6539;&#x5BF9;C&#x51FD;&#x6570;&#x7684;&#x8865;&#x5168;&#x5FEB;&#x6377;&#x952E;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;CTRL + space&#xFF0C;&#x4FEE;&#x6539;&#x4E3A;ALT + ;  
+let g:ycm_key_invoke_completion = &apos;<M-;>&apos;  
+&quot; &#x8BBE;&#x7F6E;&#x8F6C;&#x5230;&#x5B9A;&#x4E49;&#x5904;&#x7684;&#x5FEB;&#x6377;&#x952E;&#x4E3A;ALT + G&#xFF0C;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x975E;&#x5E38;&#x8D5E;  
+nmap <M-g> :YcmCompleter GoToDefinitionElseDeclaration <C-R>=expand(&quot;<cword>&quot;)<CR><CR>  
+&quot; &#x8BBE;&#x7F6E;&#x6309;&#x54EA;&#x4E2A;&#x952E;&#x4E0A;&#x5C4F;
+let g:ycm_key_list_select_completion = [&apos;<TAB>&apos;, &apos;<Down>&apos;, &apos;<Enter>&apos;]
+
+&quot;&#x62EC;&#x53F7;&#x8865;&#x5168;
+
+
+&quot;&#x53D6;&#x6D88;&#x81EA;&#x52A8;&#x68C0;&#x67E5;&#x9519;&#x8BEF;
+
+let g:syntastic_c_checkers = []
+let g:syntastic_disabled_filetypes = [&apos;c&apos;]
+let g:syntastic_ignore_files = [&apos;*.h&apos;,&apos;*.c&apos;]
+
+&quot;&#x81EA;&#x52A8;&#x4FDD;&#x5B58;
+let g:auto_save = 1
+let g:auto_save_no_updatetime = 0
+let g:auto_save_in_insert_mode = 0
+
+&quot;&#x914D;&#x7F6E;gvim
+if has(&quot;gui_running&quot;) 
+set guifont=YaHei\ Consolas\ Hybrid\ 12 
+endif
+
+
+&quot; Go to last file(s) if invoked without arguments.
+&quot;autocmd VimLeave * nested if (!isdirectory($HOME . &quot;/.vim&quot;)) |
+&quot;   \ call mkdir($HOME . &quot;/.vim&quot;) |
+&quot;   \ endif |
+&quot;   \ execute &quot;mksession! &quot; . $HOME . &quot;/.vim/Session.vim&quot;
+
+&quot;autocmd VimEnter * nested if argc() == 0 &amp;&amp; filereadable($HOME . &quot;/.vim/Session.vim&quot;) |
+&quot;   \ execute &quot;source &quot; . $HOME . &quot;/.vim/Session.vim&quot;
+
+&quot;&#x8BBE;&#x7F6E;terminal &#x4F7F;&#x7528;gui&#x989C;&#x8272;
+&quot; IMPORTANT: Uncomment one of the following lines to force
+&quot; using 256 colors (or 88 colors) if your terminal supports it,
+&quot; but does not automatically use 256 colors by default.
+set t_Co=256
+&quot;set t_Co=88
+let g:CSApprox_attr_map = { &apos;bold&apos; : &apos;bold&apos;, &apos;italic&apos; : &apos;&apos;, &apos;sp&apos; : &apos;&apos; }
+colorscheme spring
+hi CursorLine   cterm=NONE ctermbg=lightgray ctermfg=black  guifg=white
+
 au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} set filetype=markdown nofoldenable
-</code></pre>
+
+&quot;&#x8BBE;&#x7F6E;&#x7C98;&#x8D34;&#x6A21;&#x5F0F;&#x5207;&#x6362;,&#x5728;&#x7C98;&#x8D34;&#x6A21;&#x5F0F;&#x4E0B;,&#x7C98;&#x8D34;&#x65F6;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x7F29;&#x8FDB;
+set pastetoggle=<F3>
+set clipboard=unnamed
+
+&quot;&#x6B63;&#x5E38;&#x6A21;&#x5F0F;&#x4E0B;&#x63D2;&#x5165;&#x7A7A;&#x884C; to/tO
+nmap <silent> to :call append(&apos;.&apos;, &apos;&apos;)<CR>j
+nmap <silent> tO :call append(line(&apos;.&apos;)-1, &apos;&apos;)<CR>k
+
+set foldmethod=syntax
+set nofoldenable
+</CR></silent></CR></silent></F3></Enter></Down></TAB></CR></CR></cword></C-R></M-g></M-;></C-o></C-x></leader></CR></F12></silent></cr></CR></C-F12></cr></F9></silent></F8></F7></code></pre>
+
                     
                     </section>
                 
@@ -470,10 +691,10 @@ au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} set filetype=markdown 
         </div>
 
         
-        <a href="./vundle.html" class="navigation navigation-prev " aria-label="Previous page: Vundle"><i class="fa fa-angle-left"></i></a>
+        <a href="./vimrc.html" class="navigation navigation-prev " aria-label="Previous page: vimrc配置"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./minibufexplorer.html" class="navigation navigation-next " aria-label="Next page: MiniBufExplorer"><i class="fa fa-angle-right"></i></a>
+        <a href="./cha_jian.html" class="navigation navigation-next " aria-label="Next page: 插件"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
