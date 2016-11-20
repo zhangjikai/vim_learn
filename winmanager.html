@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>块编辑 | vim学习</title>
+        <title>Winmanager | vim学习</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -39,10 +39,10 @@
         
     
     
-    <link rel="next" href="./replace.html" />
+    <link rel="next" href="./vim-multiple-cursors.html" />
     
     
-    <link rel="prev" href="./quick_go.html" />
+    <link rel="prev" href="./nerdtree.html" />
     
 
         
@@ -51,9 +51,9 @@
         
         
     <div class="book"
-        data-level="1.5"
-        data-chapter-title="块编辑"
-        data-filepath="block_edit.md"
+        data-level="2.8"
+        data-chapter-title="Winmanager"
+        data-filepath="winmanager.md"
         data-basepath="."
         data-revision="Sun Nov 20 2016 16:02:50 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -167,7 +167,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="block_edit.html">
+        <li class="chapter " data-level="1.5" data-path="block_edit.html">
             
                 
                     <a href="./block_edit.html">
@@ -428,7 +428,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.8" data-path="winmanager.html">
+        <li class="chapter active" data-level="2.8" data-path="winmanager.html">
             
                 
                     <a href="./winmanager.html">
@@ -496,28 +496,21 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x5757;&#x7F16;&#x8F91;">&#x5757;&#x7F16;&#x8F91;</h2>
-<h3 id="&#x9009;&#x62E9;&#x6587;&#x672C;&#x5757;">&#x9009;&#x62E9;&#x6587;&#x672C;&#x5757;</h3>
-<ol>
-<li>&#x79FB;&#x52A8;&#x5149;&#x6807;&#x5230;&#x8981;&#x7F16;&#x8F91;&#x7684;&#x4F4D;&#x7F6E;</li>
-<li>Ctrl+v &#x8FDB;&#x5165;&#x5FEB;&#x9009;&#x62E9;&#x6A21;&#x5F0F;</li>
-<li>&#x79FB;&#x52A8;&#x5149;&#x6807;&#x9009;&#x62E9;&#x540C;&#x65F6;&#x7F16;&#x8F91;&#x7684;&#x884C;</li>
-</ol>
-<h3 id="&#x64CD;&#x4F5C;&#x9009;&#x62E9;&#x5B8C;&#x6587;&#x672C;&#x5757;&#x540E;">&#x64CD;&#x4F5C;(&#x9009;&#x62E9;&#x5B8C;&#x6587;&#x672C;&#x5757;&#x540E;)</h3>
-<pre><code>// &#x4FEE;&#x6539;&#x5B57;&#x7B26;
-1. &#x6309;`r`(&#x5C0F;&#x5199;), &#x8FDB;&#x5165;&#x4FEE;&#x6539;&#x6A21;&#x5F0F;
-2. &#x8F93;&#x5165;&#x5B57;&#x7B26;(&#x53EA;&#x80FD;&#x8F93;&#x5165;&#x4E00;&#x4E2A;, &#x9009;&#x62E9;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x4F1A;&#x6539;&#x4E3A;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;)
+                        <h1 id="winmanager">WinManager</h1>
+<p>&#x7A97;&#x53E3;&#x7BA1;&#x7406;&#x5668;</p>
+<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
+<pre><code class="lang-bash">Plugin <span class="hljs-string">&apos;vim-scripts/winmanager&apos;</span>
+</code></pre>
+<h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2>
+<pre><code>let g:winManagerWindowLayout=&apos;FileExplorer&apos;
+nmap wm :WMToggle&lt;cr&gt;
 
-// &#x5728;&#x5757;&#x524D;&#x9762;&#x63D2;&#x5165;&#x5185;&#x5BB9;
-1. &#x6309;`I`(&#x5927;&#x5199;), &#x8FDB;&#x5165;&#x884C;&#x9996;&#x63D2;&#x5165;&#x6A21;&#x5F0F;
-2. &#x8F93;&#x5B8C;&#x5185;&#x5BB9;&#x6309;ESC
 
-// &#x5728;&#x5757;&#x540E;&#x9762;&#x63D2;&#x5165;&#x5185;&#x5BB9;
-1. &#x6309;`A`(&#x5927;&#x5199;), &#x8FDB;&#x5165;&#x884C;&#x5C3E;&#x63D2;&#x5165;&#x6A21;&#x5F0F;
-2. &#x8F93;&#x5B8C;&#x5185;&#x5BB9;&#x6309;ESC
-
-// &#x5220;&#x9664;&#x9009;&#x62E9;&#x5185;&#x5BB9;
-d
+&quot; &#x914D;&#x7F6E;Ctrl + &#x65B9;&#x5411;&#x952E;&#x5728;&#x7A97;&#x53E3;&#x4E4B;&#x95F4;&#x5207;&#x6362;
+nmap &lt;silent&gt; &lt;C-Up&gt; :wincmd k&lt;CR&gt;
+nmap &lt;silent&gt; &lt;C-Down&gt; :wincmd j&lt;CR&gt;
+nmap &lt;silent&gt; &lt;C-Left&gt; :wincmd h&lt;CR&gt;
+nmap &lt;silent&gt; &lt;C-Right&gt; :wincmd l&lt;CR&gt;
 </code></pre>
                     
                     </section>
@@ -528,10 +521,10 @@ d
         </div>
 
         
-        <a href="./quick_go.html" class="navigation navigation-prev " aria-label="Previous page: 移动"><i class="fa fa-angle-left"></i></a>
+        <a href="./nerdtree.html" class="navigation navigation-prev " aria-label="Previous page: NERDTree"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./replace.html" class="navigation navigation-next " aria-label="Next page: 替换"><i class="fa fa-angle-right"></i></a>
+        <a href="./vim-multiple-cursors.html" class="navigation navigation-next " aria-label="Next page: vim-multiple-cursors"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>块编辑 | vim学习</title>
+        <title>YouCompleteMe | vim学习</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -39,10 +39,10 @@
         
     
     
-    <link rel="next" href="./replace.html" />
+    <link rel="next" href="./markdown.html" />
     
     
-    <link rel="prev" href="./quick_go.html" />
+    <link rel="prev" href="./vundle.html" />
     
 
         
@@ -51,9 +51,9 @@
         
         
     <div class="book"
-        data-level="1.5"
-        data-chapter-title="块编辑"
-        data-filepath="block_edit.md"
+        data-level="2.2"
+        data-chapter-title="YouCompleteMe"
+        data-filepath="youcompleteme.md"
         data-basepath="."
         data-revision="Sun Nov 20 2016 16:02:50 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -167,7 +167,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="block_edit.html">
+        <li class="chapter " data-level="1.5" data-path="block_edit.html">
             
                 
                     <a href="./block_edit.html">
@@ -338,7 +338,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="youcompleteme.html">
+        <li class="chapter active" data-level="2.2" data-path="youcompleteme.html">
             
                 
                     <a href="./youcompleteme.html">
@@ -496,29 +496,60 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x5757;&#x7F16;&#x8F91;">&#x5757;&#x7F16;&#x8F91;</h2>
-<h3 id="&#x9009;&#x62E9;&#x6587;&#x672C;&#x5757;">&#x9009;&#x62E9;&#x6587;&#x672C;&#x5757;</h3>
-<ol>
-<li>&#x79FB;&#x52A8;&#x5149;&#x6807;&#x5230;&#x8981;&#x7F16;&#x8F91;&#x7684;&#x4F4D;&#x7F6E;</li>
-<li>Ctrl+v &#x8FDB;&#x5165;&#x5FEB;&#x9009;&#x62E9;&#x6A21;&#x5F0F;</li>
-<li>&#x79FB;&#x52A8;&#x5149;&#x6807;&#x9009;&#x62E9;&#x540C;&#x65F6;&#x7F16;&#x8F91;&#x7684;&#x884C;</li>
-</ol>
-<h3 id="&#x64CD;&#x4F5C;&#x9009;&#x62E9;&#x5B8C;&#x6587;&#x672C;&#x5757;&#x540E;">&#x64CD;&#x4F5C;(&#x9009;&#x62E9;&#x5B8C;&#x6587;&#x672C;&#x5757;&#x540E;)</h3>
-<pre><code>// &#x4FEE;&#x6539;&#x5B57;&#x7B26;
-1. &#x6309;`r`(&#x5C0F;&#x5199;), &#x8FDB;&#x5165;&#x4FEE;&#x6539;&#x6A21;&#x5F0F;
-2. &#x8F93;&#x5165;&#x5B57;&#x7B26;(&#x53EA;&#x80FD;&#x8F93;&#x5165;&#x4E00;&#x4E2A;, &#x9009;&#x62E9;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x4F1A;&#x6539;&#x4E3A;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;)
-
-// &#x5728;&#x5757;&#x524D;&#x9762;&#x63D2;&#x5165;&#x5185;&#x5BB9;
-1. &#x6309;`I`(&#x5927;&#x5199;), &#x8FDB;&#x5165;&#x884C;&#x9996;&#x63D2;&#x5165;&#x6A21;&#x5F0F;
-2. &#x8F93;&#x5B8C;&#x5185;&#x5BB9;&#x6309;ESC
-
-// &#x5728;&#x5757;&#x540E;&#x9762;&#x63D2;&#x5165;&#x5185;&#x5BB9;
-1. &#x6309;`A`(&#x5927;&#x5199;), &#x8FDB;&#x5165;&#x884C;&#x5C3E;&#x63D2;&#x5165;&#x6A21;&#x5F0F;
-2. &#x8F93;&#x5B8C;&#x5185;&#x5BB9;&#x6309;ESC
-
-// &#x5220;&#x9664;&#x9009;&#x62E9;&#x5185;&#x5BB9;
-d
+                        <h2 id="youcompleteme">YouCompleteMe</h2>
+<p><a href="https://github.com/Valloric/YouCompleteMe#ubuntu-linux-x64" target="_blank">&#x5730;&#x5740;</a></p>
+<h3 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h3>
+<h4 id="vundle">Vundle</h4>
+<pre><code class="lang-bash">Plugin <span class="hljs-string">&apos;Valloric/YouCompleteMe&apos;</span>
 </code></pre>
+<h4 id="cmake">Cmake</h4>
+<pre><code class="lang-bash">sudo apt-get install build-essential cmake
+</code></pre>
+<h4 id="c&#x8BED;&#x8A00;&#x652F;&#x6301;&#x5B89;&#x88C5;">c&#x8BED;&#x8A00;&#x652F;&#x6301;&#x5B89;&#x88C5;</h4>
+<pre><code>cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer
+</code></pre><h3 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h3>
+<h4 id="vimrc&#x914D;&#x7F6E;">vimrc&#x914D;&#x7F6E;</h4>
+<pre><code class="lang-bash"><span class="hljs-built_in">let</span> g:ycm_global_ycm_extra_conf = <span class="hljs-string">&apos;/home/zhangjikai/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py&apos;</span>
+<span class="hljs-built_in">let</span> g:ycm_semantic_triggers = {}
+<span class="hljs-built_in">let</span> g:ycm_semantic_triggers.c = [<span class="hljs-string">&apos;-&gt;&apos;</span>, <span class="hljs-string">&apos;.&apos;</span>, <span class="hljs-string">&apos;(&apos;</span>, <span class="hljs-string">&apos;[&apos;</span>, <span class="hljs-string">&apos;&amp;&apos;</span>]
+<span class="hljs-built_in">let</span> g:ycm_collect_identifiers_from_tags_files=<span class="hljs-number">1</span>
+<span class="hljs-built_in">let</span> g:ycm_min_num_of_chars_<span class="hljs-keyword">for</span>_completion=<span class="hljs-number">3</span>
+<span class="hljs-built_in">let</span> g:ycm_seed_identifiers_with_syntax=<span class="hljs-number">1</span>
+
+<span class="hljs-string">&quot; YouCompleteMe &#x529F;&#x80FD;  
+&quot;</span> &#x8865;&#x5168;&#x529F;&#x80FD;&#x5728;&#x6CE8;&#x91CA;&#x4E2D;&#x540C;&#x6837;&#x6709;&#x6548;  
+<span class="hljs-built_in">let</span> g:ycm_complete_<span class="hljs-keyword">in</span>_comments=<span class="hljs-number">0</span>
+<span class="hljs-string">&quot; &#x5141;&#x8BB8; vim &#x52A0;&#x8F7D; .ycm_extra_conf.py &#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x518D;&#x63D0;&#x793A;  
+let g:ycm_confirm_extra_conf=0
+&quot;</span> &#x5F00;&#x542F; YCM &#x57FA;&#x4E8E;&#x6807;&#x7B7E;&#x5F15;&#x64CE;  
+<span class="hljs-built_in">let</span> g:ycm_collect_identifiers_from_tags_files=<span class="hljs-number">1</span>  
+<span class="hljs-string">&quot; &#x5F15;&#x5165; C++ &#x6807;&#x51C6;&#x5E93;tags&#xFF0C;&#x8FD9;&#x4E2A;&#x6CA1;&#x6709;&#x4E5F;&#x6CA1;&#x5173;&#x7CFB;&#xFF0C;&#x53EA;&#x8981;.ycm_extra_conf.py&#x6587;&#x4EF6;&#x4E2D;&#x6307;&#x5B9A;&#x4E86;&#x6B63;&#x786E;&#x7684;&#x6807;&#x51C6;&#x5E93;&#x8DEF;&#x5F84;  
+set tags+=/data/misc/software/misc./vim/stdcpp.tags  
+&quot;</span> YCM &#x96C6;&#x6210; OmniCppComplete &#x8865;&#x5168;&#x5F15;&#x64CE;&#xFF0C;&#x8BBE;&#x7F6E;&#x5176;&#x5FEB;&#x6377;&#x952E;  
+inoremap &lt;leader&gt;; &lt;C-x&gt;&lt;C-o&gt;  
+<span class="hljs-string">&quot; &#x8865;&#x5168;&#x5185;&#x5BB9;&#x4E0D;&#x4EE5;&#x5206;&#x5272;&#x5B50;&#x7A97;&#x53E3;&#x5F62;&#x5F0F;&#x51FA;&#x73B0;&#xFF0C;&#x53EA;&#x663E;&#x793A;&#x8865;&#x5168;&#x5217;&#x8868;  
+set completeopt-=preview  
+&quot;</span> &#x4ECE;&#x7B2C;&#x4E00;&#x4E2A;&#x952E;&#x5165;&#x5B57;&#x7B26;&#x5C31;&#x5F00;&#x59CB;&#x7F57;&#x5217;&#x5339;&#x914D;&#x9879;  
+<span class="hljs-built_in">let</span> g:ycm_min_num_of_chars_<span class="hljs-keyword">for</span>_completion=<span class="hljs-number">1</span>
+<span class="hljs-string">&quot; &#x7981;&#x6B62;&#x7F13;&#x5B58;&#x5339;&#x914D;&#x9879;&#xFF0C;&#x6BCF;&#x6B21;&#x90FD;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x5339;&#x914D;&#x9879;  
+let g:ycm_cache_omnifunc=0  
+&quot;</span> &#x8BED;&#x6CD5;&#x5173;&#x952E;&#x5B57;&#x8865;&#x5168;              
+<span class="hljs-built_in">let</span> g:ycm_seed_identifiers_with_syntax=<span class="hljs-number">1</span>  
+<span class="hljs-string">&quot; &#x4FEE;&#x6539;&#x5BF9;C&#x51FD;&#x6570;&#x7684;&#x8865;&#x5168;&#x5FEB;&#x6377;&#x952E;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;CTRL + space&#xFF0C;&#x4FEE;&#x6539;&#x4E3A;ALT + ;  
+let g:ycm_key_invoke_completion = &apos;&lt;M-;&gt;&apos;  
+&quot;</span> &#x8BBE;&#x7F6E;&#x8F6C;&#x5230;&#x5B9A;&#x4E49;&#x5904;&#x7684;&#x5FEB;&#x6377;&#x952E;&#x4E3A;ALT + G&#xFF0C;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x975E;&#x5E38;&#x8D5E;  
+nmap &lt;M-g&gt; :YcmCompleter GoToDefinitionElseDeclaration &lt;C-R&gt;=expand(<span class="hljs-string">&quot;&lt;cword&gt;&quot;</span>)&lt;CR&gt;&lt;CR&gt;  
+<span class="hljs-string">&quot; &#x8BBE;&#x7F6E;&#x6309;&#x54EA;&#x4E2A;&#x952E;&#x4E0A;&#x5C4F;
+let g:ycm_key_list_select_completion = [&apos;&lt;TAB&gt;&apos;, &apos;&lt;Down&gt;&apos;, &apos;&lt;Enter&gt;&apos;]
+</span></code></pre>
+<h4 id="ycmextraconfpy-&#x914D;&#x7F6E;">ycm_extra_conf.py &#x914D;&#x7F6E;</h4>
+<h5 id="&#x652F;&#x6301;&#x63D0;&#x793A;&#x5934;&#x6587;&#x4EF6;">&#x652F;&#x6301;&#x63D0;&#x793A;&#x5934;&#x6587;&#x4EF6;</h5>
+<p>&#x5728; <code>flag=[*]</code> &#x91CC;&#x52A0;&#x5165;</p>
+<pre><code class="lang-bash"><span class="hljs-string">&apos;-isystem&apos;</span>,
+<span class="hljs-string">&apos;/usr/include&apos;</span>
+</code></pre>
+
                     
                     </section>
                 
@@ -528,10 +559,10 @@ d
         </div>
 
         
-        <a href="./quick_go.html" class="navigation navigation-prev " aria-label="Previous page: 移动"><i class="fa fa-angle-left"></i></a>
+        <a href="./vundle.html" class="navigation navigation-prev " aria-label="Previous page: Vundle"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./replace.html" class="navigation navigation-next " aria-label="Next page: 替换"><i class="fa fa-angle-right"></i></a>
+        <a href="./markdown.html" class="navigation navigation-next " aria-label="Next page: Markdown"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>块编辑 | vim学习</title>
+        <title>NERDTree | vim学习</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -39,10 +39,10 @@
         
     
     
-    <link rel="next" href="./replace.html" />
+    <link rel="next" href="./winmanager.html" />
     
     
-    <link rel="prev" href="./quick_go.html" />
+    <link rel="prev" href="./ctags.html" />
     
 
         
@@ -51,9 +51,9 @@
         
         
     <div class="book"
-        data-level="1.5"
-        data-chapter-title="块编辑"
-        data-filepath="block_edit.md"
+        data-level="2.7"
+        data-chapter-title="NERDTree"
+        data-filepath="nerdtree.md"
         data-basepath="."
         data-revision="Sun Nov 20 2016 16:02:50 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -167,7 +167,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="block_edit.html">
+        <li class="chapter " data-level="1.5" data-path="block_edit.html">
             
                 
                     <a href="./block_edit.html">
@@ -413,7 +413,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.7" data-path="nerdtree.html">
+        <li class="chapter active" data-level="2.7" data-path="nerdtree.html">
             
                 
                     <a href="./nerdtree.html">
@@ -496,28 +496,16 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x5757;&#x7F16;&#x8F91;">&#x5757;&#x7F16;&#x8F91;</h2>
-<h3 id="&#x9009;&#x62E9;&#x6587;&#x672C;&#x5757;">&#x9009;&#x62E9;&#x6587;&#x672C;&#x5757;</h3>
-<ol>
-<li>&#x79FB;&#x52A8;&#x5149;&#x6807;&#x5230;&#x8981;&#x7F16;&#x8F91;&#x7684;&#x4F4D;&#x7F6E;</li>
-<li>Ctrl+v &#x8FDB;&#x5165;&#x5FEB;&#x9009;&#x62E9;&#x6A21;&#x5F0F;</li>
-<li>&#x79FB;&#x52A8;&#x5149;&#x6807;&#x9009;&#x62E9;&#x540C;&#x65F6;&#x7F16;&#x8F91;&#x7684;&#x884C;</li>
-</ol>
-<h3 id="&#x64CD;&#x4F5C;&#x9009;&#x62E9;&#x5B8C;&#x6587;&#x672C;&#x5757;&#x540E;">&#x64CD;&#x4F5C;(&#x9009;&#x62E9;&#x5B8C;&#x6587;&#x672C;&#x5757;&#x540E;)</h3>
-<pre><code>// &#x4FEE;&#x6539;&#x5B57;&#x7B26;
-1. &#x6309;`r`(&#x5C0F;&#x5199;), &#x8FDB;&#x5165;&#x4FEE;&#x6539;&#x6A21;&#x5F0F;
-2. &#x8F93;&#x5165;&#x5B57;&#x7B26;(&#x53EA;&#x80FD;&#x8F93;&#x5165;&#x4E00;&#x4E2A;, &#x9009;&#x62E9;&#x7684;&#x5185;&#x5BB9;&#x90FD;&#x4F1A;&#x6539;&#x4E3A;&#x8FD9;&#x4E2A;&#x5B57;&#x7B26;)
-
-// &#x5728;&#x5757;&#x524D;&#x9762;&#x63D2;&#x5165;&#x5185;&#x5BB9;
-1. &#x6309;`I`(&#x5927;&#x5199;), &#x8FDB;&#x5165;&#x884C;&#x9996;&#x63D2;&#x5165;&#x6A21;&#x5F0F;
-2. &#x8F93;&#x5B8C;&#x5185;&#x5BB9;&#x6309;ESC
-
-// &#x5728;&#x5757;&#x540E;&#x9762;&#x63D2;&#x5165;&#x5185;&#x5BB9;
-1. &#x6309;`A`(&#x5927;&#x5199;), &#x8FDB;&#x5165;&#x884C;&#x5C3E;&#x63D2;&#x5165;&#x6A21;&#x5F0F;
-2. &#x8F93;&#x5B8C;&#x5185;&#x5BB9;&#x6309;ESC
-
-// &#x5220;&#x9664;&#x9009;&#x62E9;&#x5185;&#x5BB9;
-d
+                        <h1 id="nerdtree">NERDTree</h1>
+<p>&#x6811;&#x578B;&#x6587;&#x4EF6;&#x5217;&#x8868;</p>
+<h2 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h2>
+<p><a href="https://github.com/scrooloose/nerdtree" target="_blank">&#x5730;&#x5740;</a></p>
+<pre><code>Bundle &apos;scrooloose/nerdtree&apos;
+</code></pre><h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2>
+<pre><code>let NERDTreeWinPos=&apos;right&apos;
+let NERDTreeWinSize=30
+&quot; &#x547D;&#x4EE4;&#x662F;:NERDTree
+map &lt;F2&gt; :NERDTreeToggle&lt;CR&gt;
 </code></pre>
                     
                     </section>
@@ -528,10 +516,10 @@ d
         </div>
 
         
-        <a href="./quick_go.html" class="navigation navigation-prev " aria-label="Previous page: 移动"><i class="fa fa-angle-left"></i></a>
+        <a href="./ctags.html" class="navigation navigation-prev " aria-label="Previous page: Ctags"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./replace.html" class="navigation navigation-next " aria-label="Next page: 替换"><i class="fa fa-angle-right"></i></a>
+        <a href="./winmanager.html" class="navigation navigation-next " aria-label="Next page: Winmanager"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

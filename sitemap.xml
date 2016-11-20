@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url> <loc>http://vim.zhangjikai.com/minibufexplorer.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://vim.zhangjikai.com/quick_go.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://vim.zhangjikai.com/block_edit.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://vim.zhangjikai.com/cha_jian.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://vim.zhangjikai.com/change_case.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -10,8 +10,9 @@
 <url> <loc>http://vim.zhangjikai.com/do_shell.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://vim.zhangjikai.com/edit_binary.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://vim.zhangjikai.com/markdown.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://vim.zhangjikai.com/minibufexplorer.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://vim.zhangjikai.com/nerdtree.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://vim.zhangjikai.com/index.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://vim.zhangjikai.com/quick_go.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://vim.zhangjikai.com/replace.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://vim.zhangjikai.com/select.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://vim.zhangjikai.com/split_screen.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -21,5 +22,7 @@
 <url> <loc>http://vim.zhangjikai.com/vimrc.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://vim.zhangjikai.com/vimrcfile.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://vim.zhangjikai.com/vundle.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://vim.zhangjikai.com/winmanager.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://vim.zhangjikai.com/youcompleteme.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://vim.zhangjikai.com/输入特殊字符.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>

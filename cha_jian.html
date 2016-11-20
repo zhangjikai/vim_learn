@@ -55,7 +55,7 @@
         data-chapter-title="插件"
         data-filepath="cha_jian.md"
         data-basepath="."
-        data-revision="Tue Jul 05 2016 21:02:38 GMT+0800 (CST)"
+        data-revision="Sun Nov 20 2016 16:02:50 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -338,14 +338,29 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="markdown.html">
+        <li class="chapter " data-level="2.2" data-path="youcompleteme.html">
+            
+                
+                    <a href="./youcompleteme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        YouCompleteMe
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="markdown.html">
             
                 
                     <a href="./markdown.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.2.</b>
+                            <b>2.3.</b>
                         
                         Markdown
                     </a>
@@ -353,14 +368,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3" data-path="minibufexplorer.html">
+        <li class="chapter " data-level="2.4" data-path="minibufexplorer.html">
             
                 
                     <a href="./minibufexplorer.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.3.</b>
+                            <b>2.4.</b>
                         
                         MiniBufExplorer
                     </a>
@@ -368,14 +383,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="taglist.html">
+        <li class="chapter " data-level="2.5" data-path="taglist.html">
             
                 
                     <a href="./taglist.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.4.</b>
+                            <b>2.5.</b>
                         
                         Taglist
                     </a>
@@ -383,14 +398,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.5" data-path="ctags.html">
+        <li class="chapter " data-level="2.6" data-path="ctags.html">
             
                 
                     <a href="./ctags.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.5.</b>
+                            <b>2.6.</b>
                         
                         Ctags
                     </a>
@@ -398,14 +413,44 @@
             
         </li>
     
-        <li class="chapter " data-level="2.6" data-path="vim-multiple-cursors.html">
+        <li class="chapter " data-level="2.7" data-path="nerdtree.html">
+            
+                
+                    <a href="./nerdtree.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        NERDTree
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="winmanager.html">
+            
+                
+                    <a href="./winmanager.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        Winmanager
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="vim-multiple-cursors.html">
             
                 
                     <a href="./vim-multiple-cursors.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.6.</b>
+                            <b>2.9.</b>
                         
                         vim-multiple-cursors
                     </a>
@@ -460,7 +505,43 @@
 <li><a href="ctags.html">Ctags</a></li>
 <li><a href="vim-multiple-cursors.html">vim-multiple-cursors</a></li>
 </ul>
+<pre><code>Bundle &apos;minibufexpl.vim&apos; //buffer&#x7BA1;&#x7406;
+ Bundle &apos;comments.vim&apos; //&#x5FEB;&#x901F;&#x6CE8;&#x91CA;
+ Bundle &apos;winmanager&apos; //&#x7A97;&#x53E3;&#x7BA1;&#x7406;
 
+ Bundle &apos;Valloric/YouCompleteMe&apos; //&#x5F3A;&#x5927;&#x7684;&#x81EA;&#x52A8;&#x8865;&#x5168;&#xFF0C;&#x8C01;&#x7528;&#x8C01;&#x77E5;&#x9053;
+ Bundle &apos;Lokaltog/vim-powerline&apos; //&#x6F02;&#x4EAE;&#x7684;&#x72B6;&#x6001;&#x680F;
+ Bundle &apos;kien/ctrlp.vim&apos; //&#x5F3A;&#x5927;&#x7684;&#x6587;&#x4EF6;&#x641C;&#x7D22;
+ Bundle &apos;godlygeek/tabular&apos; //&#x5FEB;&#x901F;&#x5BF9;&#x9F50;
+ Bundle &apos;terryma/vim-multiple-cursors&apos; //&#x591A;&#x5149;&#x6807;&#x540C;&#x65F6;&#x7F16;&#x8F91;
+ Bundle &apos;tpope/vim-haml&apos; //sass scss haml&#x7B49;css&#x5F00;&#x53D1;&#x8BED;&#x8A00;&#x652F;&#x6301;
+ Bundle &apos;genoma/vim-less&apos; //less&#x652F;&#x6301;
+ Bundle &apos;Raimondi/delimitMate&apos; //&#x81EA;&#x52A8;&#x8865;&#x5168;&#x5F15;&#x53F7; &#x62EC;&#x53F7;&#x7B49;
+ Bundle &apos;hail2u/vim-css3-syntax&apos; //css3&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;
+ Bundle &apos;othree/html5.vim&apos; //html5&#x6807;&#x7B7E;&#x652F;&#x6301;
+ Bundle &apos;docunext/closetag.vim&apos; //html xml&#x81EA;&#x52A8;&#x95ED;&#x5408;&#x6807;&#x7B7E;
+ Bundle &apos;gregsexton/MatchTag&apos; //&#x81EA;&#x52A8;&#x9AD8;&#x4EAE;&#x5339;&#x914D;&#x6807;&#x7B7E;
+ Bundle &apos;easymotion/vim-easymotion&apos; //&#x5F3A;&#x5927;&#x7684;&#x641C;&#x7D22;&#x5B9A;&#x4F4D;
+ Bundle &apos;terryma/vim-expand-region&apos; //&#x81EA;&#x52A8;&#x9009;&#x62E9;&#x62EC;&#x53F7;&#x7B49;&#x7B26;&#x53F7;&#x4E2D;&#x7684;&#x5185;&#x5BB9;
+ Bundle &apos;tpope/vim-surround&apos; //&#x7B26;&#x53F7;&#x81EA;&#x52A8;&#x73AF;&#x7ED5;
+ Bundle &apos;tpope/vim-repeat&apos; //&#x66F4;&#x4E3A;&#x5F3A;&#x5927;&#x7684;&#x91CD;&#x505A;&#x529F;&#x80FD;
+ Bundle &apos;bronson/vim-trailing-whitespace&apos; //&#x663E;&#x793A;&#x4EE5;&#x53CA;&#x53BB;&#x9664;&#x884C;&#x5C3E;&#x7A7A;&#x683C;
+ Bundle &apos;SirVer/ultisnips&apos; //&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#x8865;&#x5168;
+ Bundle &apos;honza/vim-snippets&apos; //&#x5185;&#x7F6E;&#x4E86;&#x4E00;&#x5806;&#x8BED;&#x8A00;&#x7684;&#x81EA;&#x52A8;&#x8865;&#x5168;&#x7247;&#x6BB5;
+ Bundle &apos;rstacruz/vim-ultisnips-css&apos; //css&#x7684;&#x8865;&#x5168;
+ Bundle &apos;tacahiroy/ctrlp-funky&apos; //&#x57FA;&#x4E8E;ctrlp&#x7684;&#x641C;&#x7D22;&#x51FD;&#x6570;&#x7B49;&#x53D8;&#x91CF;&#x540D;
+ Bundle &apos;dyng/ctrlsf.vim&apos; //&#x57FA;&#x4E8E;ctrlp&#x7684;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x641C;&#x7D22;&#xFF0C;&#x914D;&#x5408;vim&#xFF0D;multiple&#xFF0D;cursors&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x4E00;&#x6B21;&#x4FEE;&#x6539;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;
+ Bundle &quot;pangloss/vim-javascript&quot; //&#x66F4;&#x597D;&#x7684;js&#x8BED;&#x6CD5; &#x9501;&#x8FDB;&#x652F;&#x6301;
+ Bundle &apos;othree/yajs.vim&apos; //&#x66F4;&#x597D;&#x7684;js&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;
+ Bundle &apos;othree/javascript-libraries-syntax.vim&apos; //js&#x5404;&#x7C7B;&#x6846;&#x67B6; &#x5E93;&#x7684;&#x9AD8;&#x4EAE;&#x652F;&#x6301;
+ Bundle &apos;maksimr/vim-jsbeautify&apos; //&#x683C;&#x5F0F;&#x5316;js css&#x7B49;
+ Bundle &apos;marijnh/tern_for_vim&apos; //&#x725B;&#x903C;&#x7684;&#x57FA;&#x4E8E;&#x8BED;&#x6CD5;&#x5206;&#x6790;&#x7684;&#x8865;&#x5168;
+ Bundle &apos;mbriggs/mark.vim&apos; //&#x6807;&#x8BB0;&#x9AD8;&#x4EAE;
+ Bundle &apos;gorodinskiy/vim-coloresque&apos; //&#x989C;&#x8272;&#x7B26;&#x53F7;&#x663E;&#x793A;&#x5BF9;&#x5E94;&#x989C;&#x8272;
+ Bundle &apos;scrooloose/nerdtree&apos; //&#x6587;&#x4EF6;&#x6811;&#x6D4F;&#x89C8;
+ Bundle &apos;Xuyuanp/nerdtree-git-plugin&apos; //git&#x652F;&#x6301;
+ Bundle &apos;majutsushi/tagbar&apos; //ctags&#x6807;&#x7B7E;&#x63D0;&#x53D6;&#x663E;&#x793A;
+</code></pre>
                     
                     </section>
                 
