@@ -6,7 +6,6 @@
 Plugin 'terryma/vim-multiple-cursors'
 ```
 这里是[github地址](https://github.com/terryma/vim-multiple-cursors)
-
 ### 使用
 
 ![图片](https://github.com/terryma/vim-multiple-cursors/raw/master/assets/example1.gif?raw=true)  

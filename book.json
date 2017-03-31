@@ -1,0 +1,92 @@
+{
+    "title": "Vim 学习笔记",
+    "author": "zhangjikai",
+    "description": "Vim 学习笔记",
+    "output.name": "site",
+    "gitbook" : "3.2.2",
+    "language" : "zh-hans",
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        },
+        "sidebar": {
+            "Home" : "http://www.zhangjikai.com"
+        }
+    },
+    "plugins": [
+        "-lunr",
+        "-search",
+        "-highlight",
+        "-livereload",
+        "search-plus@^0.0.11",
+        "simple-page-toc@^0.1.1",
+        "github-buttons@2.1.0",
+        "github@^2.0.0",
+        "edit-link@^2.0.2",
+        "prism@^2.1.0",
+        "disqus@^0.1.0",
+        "prism-themes@^0.0.2",
+        "anchors@^0.7.1",
+        "sitemap-general@^0.1.1",
+        "favicon@^0.0.2",
+        "3-ba@^0.9.0"
+    ],
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "disqus": {
+            "shortName": "gitbookuse"
+        },
+        "prism": {
+            "css": [
+                "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+            ]
+        },
+
+        "github": {
+            "url": "https://github.com/zhangjikai/vim_learn"
+        },
+        "sharing": {
+            "weibo": true,
+            "facebook": true,
+            "twitter": true,
+            "google": false,
+            "instapaper": false,
+             "vk": false,
+            "all": [
+                "facebook", "google", "twitter",
+                "weibo", "instapaper"
+            ]
+        },
+        "github-buttons": {
+            "repo": "zhangjikai/vim_learn",
+            "types": [
+                "star"
+            ],
+            "size": "small"
+        },
+        "3-ba": {
+            "token": "ff100361cdce95dd4c8fb96b4009f7bc"
+        },
+        "edit-link": {
+            "base": "https://github.com/zhangjikai/vim_learn/edit/master",
+            "label": "Edit This Page"
+        },
+        "sitemap-general": {
+            "prefix": "http://vim.zhangjikai.com"
+        },
+        "favicon": {
+            "shortcut": "favicon.ico",
+            "bookmark": "favicon.ico"
+        },
+        "simple-page-toc": {
+            "maxDepth": 4,
+            "skipFirstH1": true
+        }
+    }
+}

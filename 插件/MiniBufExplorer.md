@@ -23,3 +23,4 @@ Bundle 'fholgado/minibufexpl.vim'
 // 打开编号为<num>(即每个buffer前面的数字)的buffer, 
 :b<num> 
 ```
+

@@ -1,0 +1,84 @@
+/* CSS for website */
+h1 , h2{
+    border-bottom: 1px solid #EFEAEA;
+    padding-bottom: 0.3em;
+}
+.markdown-section>:first-child {
+    margin-top: 0!important;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal {
+    min-height:350px;
+    margin-bottom: 30px;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal hr {
+    height: 0px;
+    padding: 0;
+    margin: 1.7em 0;
+    overflow: hidden;
+    background-color: #e7e7e7;
+    border-bottom: 1px dotted #e7e7e7;
+}
+
+
+
+pre[class*="language-"] {
+    border: none;
+    background-color: #f7f7f7;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal {
+    font-size: 16px;
+    line-height: 1.6em;
+    font-family:  "ubuntu","Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Tahoma",  "Microsoft YaHei", arial, sans-serif;
+
+}
+
+.aceCode {
+  font-size: 14px !important;
+}
+
+input[type=checkbox]{
+    margin-left: -2em;
+}
+
+.markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.markdown-section h1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+
+.markdown-section h2 {
+  margin-top: 0.75em;
+  margin-bottom: 0.3em;
+  font-weight: 600;
+  padding-bottom: 0.4em;
+}
+
+.markdown-section blockquote, .markdown-section dl, .markdown-section ol, .markdown-section p, .markdown-section table, .markdown-section ul {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+#anchor-navigation-ex-navbar {
+  line-height: 1.5em;
+}
+
+.markdown-section ol {
+  padding-left: 1.2em;
+}
+
+.book-summary ul.summary li a {
+  padding: 8px 15px;
+  padding-left: 30px; 
+}

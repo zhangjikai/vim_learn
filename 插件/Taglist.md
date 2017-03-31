@@ -1,11 +1,9 @@
 ## Taglist
-
 ### 安装
 ```
 Bundle 'taglist.vim'
 ```
 [github地址](https://github.com/vim-scripts/taglist.vim)
-
 ### 配置
 ```
 "只显示一个文件中的tag

@@ -1,6 +1,4 @@
-# Vim学习
-
-记录vim的相关内容
+* [前言](README.md)
 
 ## 使用
 * [复制剪切粘贴](复制剪切粘贴.md)
@@ -26,4 +24,6 @@
 * [Ctags](插件/ctags.md)
 * [NERDTree](插件/nerdtree.md)
 * [Winmanager](插件/winmanager.md)
-* [vim-multiple-cursors](插件/vim-multiple-cursors.md)
+* [Vim-multiple-cursors](插件/vim-multiple-cursors.md)
+* [其他插件](插件/其他插件.md)
+

@@ -1,10 +1,8 @@
 ## ctags
-
 ### 安装
 ```
 sudo apt-get install ctags
 ```
-
 ### 配置
 ```
 " 配置Ctrl + F12为生产ctags的快捷键

@@ -64,3 +64,5 @@ filetype plugin indent on    " required
 * __:BundleSearch! foo__ -刷新foo插件缓存
 * __:BundleClean__ -清除列表中没有的插件
 * __:BundleClean!__ -清除列表中没有的插件
+
+
