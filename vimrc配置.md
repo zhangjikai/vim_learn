@@ -1,4 +1,4 @@
-## Vimrc配置
+## Vimrc 配置
 
 <!-- toc -->
 

@@ -1,4 +1,4 @@
-## vimrc文件
+## Vimrc 文件
 ```vimrc
 set nocompatible              " be iMproved, required
 filetype off                  " required
