@@ -1,0 +1,877 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>vimrc文件 · Vim 学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="zhangjikai">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="插件/vundle.html" />
+    
+    
+    <link rel="prev" href="vimrc配置.html" />
+    
+
+    
+        <link rel="shortcut icon" href='favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"zhangjikai/vim_learn","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.zhangjikai.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">使用</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="复制剪切粘贴.html">
+            
+                <a href="复制剪切粘贴.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    复制剪切粘贴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="删除.html">
+            
+                <a href="删除.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="选择.html">
+            
+                <a href="选择.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="移动.html">
+            
+                <a href="移动.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    移动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="块编辑.html">
+            
+                <a href="块编辑.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    块编辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="替换.html">
+            
+                <a href="替换.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="执行shell命令.html">
+            
+                <a href="执行shell命令.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    执行shell命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="分屏.html">
+            
+                <a href="分屏.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    分屏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="操作二进制文件.html">
+            
+                <a href="操作二进制文件.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    操作二进制文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="大小写转换.html">
+            
+                <a href="大小写转换.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    大小写转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="输入特殊字符.html">
+            
+                <a href="输入特殊字符.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    输入特殊字符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="vimrc配置.html">
+            
+                <a href="vimrc配置.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    vimrc配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.13" data-path="vimrc文件.html">
+            
+                <a href="vimrc文件.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    vimrc文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">插件</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="插件/vundle.html">
+            
+                <a href="插件/vundle.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Vundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="插件/youcompleteme.html">
+            
+                <a href="插件/youcompleteme.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    YouCompleteMe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="插件/markdown.html">
+            
+                <a href="插件/markdown.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="插件/minibufexplorer.html">
+            
+                <a href="插件/minibufexplorer.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    MiniBufExplorer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="插件/taglist.html">
+            
+                <a href="插件/taglist.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Taglist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="插件/ctags.html">
+            
+                <a href="插件/ctags.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    Ctags
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="插件/nerdtree.html">
+            
+                <a href="插件/nerdtree.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    NERDTree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="插件/winmanager.html">
+            
+                <a href="插件/winmanager.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    Winmanager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="插件/vim-multiple-cursors.html">
+            
+                <a href="插件/vim-multiple-cursors.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    Vim-multiple-cursors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="插件/其他插件.html">
+            
+                <a href="插件/其他插件.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    其他插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >vimrc文件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="vimrc&#x6587;&#x4EF6;"><a name="vimrc&#x6587;&#x4EF6;" class="plugin-anchor" href="#vimrc&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>vimrc&#x6587;&#x4EF6;</h2>
+<pre class="language-"><code class="lang-vimrc">set nocompatible              &quot; be iMproved, required
+filetype off                  &quot; required
+
+&quot; set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+&quot; alternatively, pass a path where Vundle should install plugins
+&quot;call vundle#begin(&apos;~/some/path/here&apos;)
+
+&quot; let Vundle manage Vundle, required
+Plugin &apos;VundleVim/Vundle.vim&apos;
+Plugin &apos;Valloric/YouCompleteMe&apos;
+&quot;&#x81EA;&#x52A8;&#x8865;&#x5168;
+Bundle &apos;Raimondi/delimitMate&apos;
+filetype plugin indent on
+
+&quot; The following are examples of different formats supported.
+&quot; Keep Plugin commands between vundle#begin/end.
+&quot; plugin on GitHub repo
+&quot;Plugin &apos;tpope/vim-fugitive&apos;
+&quot; plugin from http://vim-scripts.org/vim/scripts.html
+&quot;Plugin &apos;L9&apos;
+&quot; Git plugin not hosted on GitHub
+&quot;Plugin &apos;git://git.wincent.com/command-t.git&apos;
+&quot; git repos on your local machine (i.e. when working on your own plugin)
+&quot;Plugin &apos;file:///home/gmarik/path/to/plugin&apos;
+&quot; The sparkup vim script is in a subdirectory of this repo called vim.
+&quot; Pass the path to set the runtimepath properly.
+&quot;Plugin &apos;rstacruz/sparkup&apos;, {&apos;rtp&apos;: &apos;vim/&apos;}
+&quot; Avoid a name conflict with L9
+&quot;Plugin &apos;user/L9&apos;, {&apos;name&apos;: &apos;newL9&apos;}
+
+&quot; All of your Plugins must be added before the following line
+call vundle#end()            &quot; required
+filetype plugin indent on    &quot; required
+&quot; To ignore plugin indent changes, instead use:
+&quot;filetype plugin on
+&quot;
+&quot; Brief help
+&quot; :PluginList       - lists configured plugins
+&quot; :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+&quot; :PluginSearch foo - searches for foo; append `!` to refresh local cache
+&quot; :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+&quot;
+&quot; see :h vundle for more details or wiki for FAQ
+&quot; Put your non-Plugin stuff after this line
+
+&quot;markdown
+Plugin &apos;godlygeek/tabular&apos;
+Plugin &apos;plasticboy/vim-markdown&apos;
+Plugin &apos;terryma/vim-multiple-cursors&apos;
+
+
+set number                  &quot; &#x663E;&#x793A;&#x884C;&#x53F7;
+set cursorline              &quot; &#x7A81;&#x51FA;&#x663E;&#x793A;&#x5F53;&#x524D;&#x884C;
+
+
+&quot;set guicursor=i:block-iCursor-blinkon0,v:block-vCursor
+&quot;set cursorcolumn             &quot; &#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x5F53;&#x524D;&#x884C;/&#x5217;
+set shiftwidth=4            &quot; &#x8BBE;&#x5B9A; &lt;&lt; &#x548C; &gt;&gt; &#x547D;&#x4EE4;&#x79FB;&#x52A8;&#x65F6;&#x7684;&#x5BBD;&#x5EA6;&#x4E3A; 4
+set softtabstop=4           &quot; &#x4F7F;&#x5F97;&#x6309;&#x9000;&#x683C;&#x952E;&#x65F6;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x5220;&#x6389; 4 &#x4E2A;&#x7A7A;&#x683C;
+set tabstop=4               &quot; &#x8BBE;&#x5B9A; tab &#x957F;&#x5EA6;&#x4E3A; 4
+set expandtab               &quot; &#x52A0;&#x4E0A;&#x8FD9;&#x53E5;&#x9632;&#x6B62;&#x4EE3;&#x7801;&#x590D;&#x5236;&#x5230;&#x522B;&#x7684;&#x5730;&#x65F6;tab&#x53D8;&#x4E3A;8&#x4E2A;&#x7A7A;&#x683C;   
+set autochdir               &quot; &#x81EA;&#x52A8;&#x5207;&#x6362;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E3A;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x76EE;&#x5F55;
+
+&quot;color solarized
+set ruler                      &quot; &#x663E;&#x793A;&#x5149;&#x6807;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;
+set nowrap                     &quot; &#x7981;&#x6B62;&#x6298;&#x884C;
+syntax enable                 &quot; &#x5F00;&#x542F;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;&#x529F;&#x80FD;
+syntax on                     &quot; &#x5141;&#x8BB8;&#x7528;&#x6307;&#x5B9A;&#x8BED;&#x6CD5;&#x9AD8;&#x4EAE;&#x914D;&#x8272;&#x65B9;&#x6848;&#x66FF;&#x6362;&#x9ED8;&#x8BA4;&#x65B9;&#x6848;
+&quot;colorscheme  anderson  &quot; &#x8BBE;&#x5B9A;&#x914D;&#x8272;&#x65B9;&#x6848;
+&quot;colorscheme  spring     &quot; &#x8BBE;&#x5B9A;&#x914D;&#x8272;&#x65B9;&#x6848;
+&quot;color spring
+set smartindent             &quot; &#x5F00;&#x542F;&#x65B0;&#x884C;&#x65F6;&#x4F7F;&#x7528;&#x667A;&#x80FD;&#x81EA;&#x52A8;&#x7F29;&#x8FDB;
+set laststatus=2            &quot; &#x663E;&#x793A;&#x72B6;&#x6001;&#x680F; (&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 1, &#x65E0;&#x6CD5;&#x663E;&#x793A;&#x72B6;&#x6001;&#x680F;)
+&quot;set foldenable              &quot; &#x5F00;&#x59CB;&#x6298;&#x53E0;
+&quot;set foldmethod=syntax       &quot; &#x8BBE;&#x7F6E;&#x8BED;&#x6CD5;&#x6298;&#x53E0;
+
+set mouse=a
+
+&quot;&#x8BBE;&#x7F6E;&#x8865;&#x5168;&#x6587;&#x4EF6;&#x540D;
+set wildmode=list:longest
+
+&quot;hi preproc        guifg=blue        ctermfg=blue
+
+
+&quot; MiniBufExplorer     &#x591A;&#x4E2A;&#x6587;&#x4EF6;&#x5207;&#x6362; &#x53EF;&#x4F7F;&#x7528;&#x9F20;&#x6807;&#x53CC;&#x51FB;&#x76F8;&#x5E94;&#x6587;&#x4EF6;&#x540D;&#x8FDB;&#x884C;&#x5207;&#x6362;
+let g:miniBufExplMapWindowNavVim=1
+let g:miniBufExplMapWindowNavArrows=1
+let g:miniBufExplMapCTabSwitchBufs=1
+let g:miniBufExplModSelTarget=1
+
+map <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>F7</span><span class="token punctuation">&gt;</span></span> 20zl &quot; Scroll 20 characters to the right
+map <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>F8</span><span class="token punctuation">&gt;</span></span> 20zh &quot; Scroll 20 characters to the left
+
+&quot;au VimEnter * if line(&apos;$&apos;) &gt; &amp;lines | set go+=r | else | set go-=r | endif
+&quot;au VimResized * if line(&apos;$&apos;) &gt; &amp;lines | set go+=r | else | set go-=r | endif
+
+&quot; &#x914D;&#x7F6E;&#x591A;&#x8BED;&#x8A00;&#x73AF;&#x5883;
+if has(&quot;multi_byte&quot;)
+    &quot; UTF-8 &#x7F16;&#x7801;
+    set encoding=utf-8
+    set termencoding=utf-8
+    set formatoptions+=mM
+    set fencs=utf-8,gbk
+    if v:lang =~? &apos;^\(zh\)\|\(ja\)\|\(ko\)&apos;
+        set ambiwidth=double
+    endif
+    if has(&quot;win32&quot;)
+        source $VIMRUNTIME/delmenu.vim
+        source $VIMRUNTIME/menu.vim
+        language messages zh_CN.utf-8
+    endif
+else
+    echoerr &quot;Sorry, this version of (g)vim was not compiled with +multi_byte&quot;
+endif
+
+&quot;&#x914D;&#x7F6E;taglist
+let Tlist_Show_One_File=1   &quot;&#x53EA;&#x663E;&#x793A;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x7684;tag
+let Tlist_Exit_OnlyWindow=1 
+let Tlist_Sort_Type=&quot;name&quot; &quot;&#x6309;tag&#x540D;&#x79F0;&#x6392;&#x5E8F;
+let Tlist_Use_SingleClick=1  &quot;&#x5355;&#x51FB;
+let Tlist_Use_Right_Window=1 &quot;&#x628A;taglist&#x7A97;&#x53E3;&#x653E;&#x5728;&#x5C4F;&#x5E55;&#x7684;&#x53F3;&#x4FA7;&#xFF0C;&#x7F3A;&#x7701;&#x5728;&#x5DE6;&#x4FA7; 
+let Tlist_Show_Menu=1 &quot;&#x663E;&#x793A;taglist&#x83DC;&#x5355;
+map <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>silent</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>F9</span><span class="token punctuation">&gt;</span></span> :TlistToggle<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cr</span><span class="token punctuation">&gt;</span></span> 
+
+
+&quot;&#x914D;&#x7F6E;ctags&#x5FEB;&#x6377;&#x952E;
+map <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>C-F12</span><span class="token punctuation">&gt;</span></span> :!ctags --c-kinds=+lpx -R .<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CR</span><span class="token punctuation">&gt;</span></span>  
+
+&quot;&#x914D;&#x7F6E;WinManager
+let g:winManagerWindowLayout=&apos;FileExplorer&apos;
+nmap wm :WMToggle<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cr</span><span class="token punctuation">&gt;</span></span>
+
+&quot;&#x8BBE;&#x7F6E;cscope
+:set cscopequickfix=s-,c-,d-,i-,t-,e-
+
+&quot;&#x8BBE;&#x7F6E;MiniBufExplorer
+let g:miniBufExplMapWindowNavArrows = 1
+
+&quot;&#x5934;&#x6587;&#x4EF6;&#x4E92;&#x6362;
+nnoremap <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>silent</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>F12</span><span class="token punctuation">&gt;</span></span> :A<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CR</span><span class="token punctuation">&gt;</span></span>
+
+let g:ycm_global_ycm_extra_conf = &apos;/home/zhangjikai/.vim/bundle/third_party/ycmd/cpp/ycm/ycm.c.py&apos;
+let g:ycm_semantic_triggers = {}
+let g:ycm_semantic_triggers.c = [&apos;-&gt;&apos;, &apos;.&apos;, &apos;(&apos;, &apos;[&apos;, &apos;&amp;&apos;]
+let g:ycm_collect_identifiers_from_tags_files=1
+let g:ycm_min_num_of_chars_for_completion=3
+let g:ycm_seed_identifiers_with_syntax=1
+
+
+&quot; YouCompleteMe &#x529F;&#x80FD;  
+&quot; &#x8865;&#x5168;&#x529F;&#x80FD;&#x5728;&#x6CE8;&#x91CA;&#x4E2D;&#x540C;&#x6837;&#x6709;&#x6548;  
+let g:ycm_complete_in_comments=0 
+&quot; &#x5141;&#x8BB8; vim &#x52A0;&#x8F7D; .ycm_extra_conf.py &#x6587;&#x4EF6;&#xFF0C;&#x4E0D;&#x518D;&#x63D0;&#x793A;  
+let g:ycm_confirm_extra_conf=0
+&quot; &#x5F00;&#x542F; YCM &#x57FA;&#x4E8E;&#x6807;&#x7B7E;&#x5F15;&#x64CE;  
+let g:ycm_collect_identifiers_from_tags_files=1  
+&quot; &#x5F15;&#x5165; C++ &#x6807;&#x51C6;&#x5E93;tags&#xFF0C;&#x8FD9;&#x4E2A;&#x6CA1;&#x6709;&#x4E5F;&#x6CA1;&#x5173;&#x7CFB;&#xFF0C;&#x53EA;&#x8981;.ycm_extra_conf.py&#x6587;&#x4EF6;&#x4E2D;&#x6307;&#x5B9A;&#x4E86;&#x6B63;&#x786E;&#x7684;&#x6807;&#x51C6;&#x5E93;&#x8DEF;&#x5F84;  
+set tags+=/data/misc/software/misc./vim/stdcpp.tags  
+&quot; YCM &#x96C6;&#x6210; OmniCppComplete &#x8865;&#x5168;&#x5F15;&#x64CE;&#xFF0C;&#x8BBE;&#x7F6E;&#x5176;&#x5FEB;&#x6377;&#x952E;  
+inoremap <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>leader</span><span class="token punctuation">&gt;</span></span>; <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>C-x</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>C-o</span><span class="token punctuation">&gt;</span></span>  
+&quot; &#x8865;&#x5168;&#x5185;&#x5BB9;&#x4E0D;&#x4EE5;&#x5206;&#x5272;&#x5B50;&#x7A97;&#x53E3;&#x5F62;&#x5F0F;&#x51FA;&#x73B0;&#xFF0C;&#x53EA;&#x663E;&#x793A;&#x8865;&#x5168;&#x5217;&#x8868;  
+set completeopt-=preview  
+&quot; &#x4ECE;&#x7B2C;&#x4E00;&#x4E2A;&#x952E;&#x5165;&#x5B57;&#x7B26;&#x5C31;&#x5F00;&#x59CB;&#x7F57;&#x5217;&#x5339;&#x914D;&#x9879;  
+let g:ycm_min_num_of_chars_for_completion=1 
+&quot; &#x7981;&#x6B62;&#x7F13;&#x5B58;&#x5339;&#x914D;&#x9879;&#xFF0C;&#x6BCF;&#x6B21;&#x90FD;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x5339;&#x914D;&#x9879;  
+let g:ycm_cache_omnifunc=0  
+&quot; &#x8BED;&#x6CD5;&#x5173;&#x952E;&#x5B57;&#x8865;&#x5168;              
+let g:ycm_seed_identifiers_with_syntax=1  
+&quot; &#x4FEE;&#x6539;&#x5BF9;C&#x51FD;&#x6570;&#x7684;&#x8865;&#x5168;&#x5FEB;&#x6377;&#x952E;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;CTRL + space&#xFF0C;&#x4FEE;&#x6539;&#x4E3A;ALT + ;  
+let g:ycm_key_invoke_completion = &apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>M-;</span><span class="token punctuation">&gt;</span></span>&apos;  
+&quot; &#x8BBE;&#x7F6E;&#x8F6C;&#x5230;&#x5B9A;&#x4E49;&#x5904;&#x7684;&#x5FEB;&#x6377;&#x952E;&#x4E3A;ALT + G&#xFF0C;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x975E;&#x5E38;&#x8D5E;  
+nmap <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>M-g</span><span class="token punctuation">&gt;</span></span> :YcmCompleter GoToDefinitionElseDeclaration <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>C-R</span><span class="token punctuation">&gt;</span></span>=expand(&quot;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cword</span><span class="token punctuation">&gt;</span></span>&quot;)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CR</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CR</span><span class="token punctuation">&gt;</span></span>  
+&quot; &#x8BBE;&#x7F6E;&#x6309;&#x54EA;&#x4E2A;&#x952E;&#x4E0A;&#x5C4F;
+let g:ycm_key_list_select_completion = [&apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>TAB</span><span class="token punctuation">&gt;</span></span>&apos;, &apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Down</span><span class="token punctuation">&gt;</span></span>&apos;, &apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Enter</span><span class="token punctuation">&gt;</span></span>&apos;]
+
+&quot;&#x62EC;&#x53F7;&#x8865;&#x5168;
+
+
+&quot;&#x53D6;&#x6D88;&#x81EA;&#x52A8;&#x68C0;&#x67E5;&#x9519;&#x8BEF;
+
+let g:syntastic_c_checkers = []
+let g:syntastic_disabled_filetypes = [&apos;c&apos;]
+let g:syntastic_ignore_files = [&apos;*.h&apos;,&apos;*.c&apos;]
+
+&quot;&#x81EA;&#x52A8;&#x4FDD;&#x5B58;
+let g:auto_save = 1
+let g:auto_save_no_updatetime = 0
+let g:auto_save_in_insert_mode = 0
+
+&quot;&#x914D;&#x7F6E;gvim
+if has(&quot;gui_running&quot;) 
+set guifont=YaHei\ Consolas\ Hybrid\ 12 
+endif
+
+
+&quot; Go to last file(s) if invoked without arguments.
+&quot;autocmd VimLeave * nested if (!isdirectory($HOME . &quot;/.vim&quot;)) |
+&quot;   \ call mkdir($HOME . &quot;/.vim&quot;) |
+&quot;   \ endif |
+&quot;   \ execute &quot;mksession! &quot; . $HOME . &quot;/.vim/Session.vim&quot;
+
+&quot;autocmd VimEnter * nested if argc() == 0 &amp;&amp; filereadable($HOME . &quot;/.vim/Session.vim&quot;) |
+&quot;   \ execute &quot;source &quot; . $HOME . &quot;/.vim/Session.vim&quot;
+
+&quot;&#x8BBE;&#x7F6E;terminal &#x4F7F;&#x7528;gui&#x989C;&#x8272;
+&quot; IMPORTANT: Uncomment one of the following lines to force
+&quot; using 256 colors (or 88 colors) if your terminal supports it,
+&quot; but does not automatically use 256 colors by default.
+set t_Co=256
+&quot;set t_Co=88
+let g:CSApprox_attr_map = { &apos;bold&apos; : &apos;bold&apos;, &apos;italic&apos; : &apos;&apos;, &apos;sp&apos; : &apos;&apos; }
+colorscheme spring
+hi CursorLine   cterm=NONE ctermbg=lightgray ctermfg=black  guifg=white
+
+au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn} set filetype=markdown nofoldenable
+
+&quot;&#x8BBE;&#x7F6E;&#x7C98;&#x8D34;&#x6A21;&#x5F0F;&#x5207;&#x6362;,&#x5728;&#x7C98;&#x8D34;&#x6A21;&#x5F0F;&#x4E0B;,&#x7C98;&#x8D34;&#x65F6;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x7F29;&#x8FDB;
+set pastetoggle=<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>F3</span><span class="token punctuation">&gt;</span></span>
+set clipboard=unnamed
+
+&quot;&#x6B63;&#x5E38;&#x6A21;&#x5F0F;&#x4E0B;&#x63D2;&#x5165;&#x7A7A;&#x884C; to/tO
+nmap <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>silent</span><span class="token punctuation">&gt;</span></span> to :call append(&apos;.&apos;, &apos;&apos;)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CR</span><span class="token punctuation">&gt;</span></span>j
+nmap <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>silent</span><span class="token punctuation">&gt;</span></span> tO :call append(line(&apos;.&apos;)-1, &apos;&apos;)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>CR</span><span class="token punctuation">&gt;</span></span>k
+
+set foldmethod=syntax
+set nofoldenable
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="vimrc配置.html" class="navigation navigation-prev " aria-label="Previous page: vimrc配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="插件/vundle.html" class="navigation navigation-next " aria-label="Next page: Vundle">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"vimrc文件","level":"2.13","depth":1,"next":{"title":"Vundle","level":"3.1","depth":1,"path":"插件/vundle.md","ref":"插件/vundle.md","articles":[]},"previous":{"title":"vimrc配置","level":"2.12","depth":1,"path":"vimrc配置.md","ref":"vimrc配置.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github-buttons@2.1.0","github@^2.0.0","edit-link@^2.0.2","prism@^2.1.0","disqus@^0.1.0","prism-themes@^0.0.2","anchors@^0.7.1","sitemap-general@^0.1.1","favicon@^0.0.2","3-ba@^0.9.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"github":{"url":"https://github.com/zhangjikai/vim_learn"},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"sitemap-general":{"prefix":"http://vim.zhangjikai.com"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"zhangjikai/vim_learn","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/zhangjikai/vim_learn/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Vim 学习笔记","language":"zh-hans","output.name":"site","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Home":"http://www.zhangjikai.com"}},"gitbook":"3.2.2","description":"Vim 学习笔记"},"file":{"path":"vimrc文件.md","mtime":"2017-03-31T03:17:34.828Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-31T06:04:14.225Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

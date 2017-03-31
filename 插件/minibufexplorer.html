@@ -1,0 +1,668 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MiniBufExplorer · Vim 学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="zhangjikai">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="taglist.html" />
+    
+    
+    <link rel="prev" href="markdown.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"zhangjikai/vim_learn","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.zhangjikai.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">使用</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../复制剪切粘贴.html">
+            
+                <a href="../复制剪切粘贴.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    复制剪切粘贴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../删除.html">
+            
+                <a href="../删除.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../选择.html">
+            
+                <a href="../选择.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../移动.html">
+            
+                <a href="../移动.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    移动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../块编辑.html">
+            
+                <a href="../块编辑.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    块编辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../替换.html">
+            
+                <a href="../替换.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../执行shell命令.html">
+            
+                <a href="../执行shell命令.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    执行shell命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../分屏.html">
+            
+                <a href="../分屏.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    分屏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../操作二进制文件.html">
+            
+                <a href="../操作二进制文件.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    操作二进制文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../大小写转换.html">
+            
+                <a href="../大小写转换.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    大小写转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../输入特殊字符.html">
+            
+                <a href="../输入特殊字符.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    输入特殊字符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../vimrc配置.html">
+            
+                <a href="../vimrc配置.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    vimrc配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../vimrc文件.html">
+            
+                <a href="../vimrc文件.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    vimrc文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">插件</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="vundle.html">
+            
+                <a href="vundle.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Vundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="youcompleteme.html">
+            
+                <a href="youcompleteme.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    YouCompleteMe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="markdown.html">
+            
+                <a href="markdown.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="minibufexplorer.html">
+            
+                <a href="minibufexplorer.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    MiniBufExplorer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="taglist.html">
+            
+                <a href="taglist.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Taglist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="ctags.html">
+            
+                <a href="ctags.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    Ctags
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="nerdtree.html">
+            
+                <a href="nerdtree.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    NERDTree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="winmanager.html">
+            
+                <a href="winmanager.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    Winmanager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="vim-multiple-cursors.html">
+            
+                <a href="vim-multiple-cursors.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    Vim-multiple-cursors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="其他插件.html">
+            
+                <a href="其他插件.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    其他插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >MiniBufExplorer</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="minibufexplorer"><a name="minibufexplorer" class="plugin-anchor" href="#minibufexplorer"><i class="fa fa-link" aria-hidden="true"></i></a>MiniBufExplorer</h2>
+<h3 id="&#x5B89;&#x88C5;"><a name="&#x5B89;&#x88C5;" class="plugin-anchor" href="#&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;</h3>
+<pre class="language-"><code>Bundle &apos;fholgado/minibufexpl.vim&apos;
+</code></pre><p><a href="https://github.com/fholgado/minibufexpl.vim" target="_blank">github&#x5730;&#x5740;</a></p>
+<h3 id="&#x5FEB;&#x6377;&#x952E;"><a name="&#x5FEB;&#x6377;&#x952E;" class="plugin-anchor" href="#&#x5FEB;&#x6377;&#x952E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FEB;&#x6377;&#x952E;</h3>
+<ul>
+<li><strong>Tab </strong> : &#x5411;&#x524D;&#x5FAA;&#x73AF;&#x5207;&#x6362;&#x5230;&#x6BCF;&#x4E2A;buffer&#x4E0A;</li>
+<li><strong>Shift - Tab</strong> : &#x5411;&#x540E;&#x5FAA;&#x73AF;&#x5207;&#x6362;&#x5230;&#x6BCF;&#x4E2A;buffer&#x4E0A;</li>
+<li><strong>Enter</strong> : &#x6253;&#x5F00;&#x5149;&#x6807;&#x6240;&#x5728;&#x7684;buffer</li>
+<li><strong>d</strong> : &#x5220;&#x9664;&#x5149;&#x6807;&#x6240;&#x5728;&#x7684;buffer</li>
+</ul>
+<h3 id="&#x547D;&#x4EE4;"><a name="&#x547D;&#x4EE4;" class="plugin-anchor" href="#&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x547D;&#x4EE4;</h3>
+<p>&#x5728;&#x4E00;&#x822C;&#x6A21;&#x5F0F;&#x4E0B;</p>
+<pre class="language-"><code>// &#x6253;&#x5F00;&#x5F53;&#x524D;buffer&#x7684;&#x4E0B;&#x4E00;&#x4E2A;buffer
+:bn
+
+// &#x6253;&#x5F00;&#x5F53;&#x5F3A;buffer&#x7684;&#x4E0A;&#x4E00;&#x4E2A;buffer
+:bp
+
+// &#x6253;&#x5F00;&#x7F16;&#x53F7;&#x4E3A;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>num</span><span class="token punctuation">&gt;</span></span>(&#x5373;&#x6BCF;&#x4E2A;buffer&#x524D;&#x9762;&#x7684;&#x6570;&#x5B57;)&#x7684;buffer, 
+:b<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>num</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="markdown.html" class="navigation navigation-prev " aria-label="Previous page: Markdown">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="taglist.html" class="navigation navigation-next " aria-label="Next page: Taglist">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MiniBufExplorer","level":"3.4","depth":1,"next":{"title":"Taglist","level":"3.5","depth":1,"path":"插件/taglist.md","ref":"插件/taglist.md","articles":[]},"previous":{"title":"Markdown","level":"3.3","depth":1,"path":"插件/markdown.md","ref":"插件/markdown.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github-buttons@2.1.0","github@^2.0.0","edit-link@^2.0.2","prism@^2.1.0","disqus@^0.1.0","prism-themes@^0.0.2","anchors@^0.7.1","sitemap-general@^0.1.1","favicon@^0.0.2","3-ba@^0.9.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"github":{"url":"https://github.com/zhangjikai/vim_learn"},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"sitemap-general":{"prefix":"http://vim.zhangjikai.com"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"zhangjikai/vim_learn","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/zhangjikai/vim_learn/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Vim 学习笔记","language":"zh-hans","output.name":"site","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Home":"http://www.zhangjikai.com"}},"gitbook":"3.2.2","description":"Vim 学习笔记"},"file":{"path":"插件/minibufexplorer.md","mtime":"2017-03-31T03:17:34.823Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-31T06:04:14.225Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

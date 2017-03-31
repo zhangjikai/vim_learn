@@ -1,0 +1,712 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Vundle · Vim 学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="zhangjikai">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="youcompleteme.html" />
+    
+    
+    <link rel="prev" href="../vimrc文件.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"zhangjikai/vim_learn","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://www.zhangjikai.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">使用</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../复制剪切粘贴.html">
+            
+                <a href="../复制剪切粘贴.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    复制剪切粘贴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../删除.html">
+            
+                <a href="../删除.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../选择.html">
+            
+                <a href="../选择.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../移动.html">
+            
+                <a href="../移动.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    移动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../块编辑.html">
+            
+                <a href="../块编辑.html">
+            
+                    
+                        <b>2.5.</b>
+                    
+                    块编辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../替换.html">
+            
+                <a href="../替换.html">
+            
+                    
+                        <b>2.6.</b>
+                    
+                    替换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../执行shell命令.html">
+            
+                <a href="../执行shell命令.html">
+            
+                    
+                        <b>2.7.</b>
+                    
+                    执行shell命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../分屏.html">
+            
+                <a href="../分屏.html">
+            
+                    
+                        <b>2.8.</b>
+                    
+                    分屏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../操作二进制文件.html">
+            
+                <a href="../操作二进制文件.html">
+            
+                    
+                        <b>2.9.</b>
+                    
+                    操作二进制文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../大小写转换.html">
+            
+                <a href="../大小写转换.html">
+            
+                    
+                        <b>2.10.</b>
+                    
+                    大小写转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../输入特殊字符.html">
+            
+                <a href="../输入特殊字符.html">
+            
+                    
+                        <b>2.11.</b>
+                    
+                    输入特殊字符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../vimrc配置.html">
+            
+                <a href="../vimrc配置.html">
+            
+                    
+                        <b>2.12.</b>
+                    
+                    vimrc配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../vimrc文件.html">
+            
+                <a href="../vimrc文件.html">
+            
+                    
+                        <b>2.13.</b>
+                    
+                    vimrc文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">插件</li>
+        
+        
+    
+        <li class="chapter active" data-level="3.1" data-path="vundle.html">
+            
+                <a href="vundle.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Vundle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="youcompleteme.html">
+            
+                <a href="youcompleteme.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    YouCompleteMe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="markdown.html">
+            
+                <a href="markdown.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="minibufexplorer.html">
+            
+                <a href="minibufexplorer.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    MiniBufExplorer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="taglist.html">
+            
+                <a href="taglist.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    Taglist
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="ctags.html">
+            
+                <a href="ctags.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    Ctags
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="nerdtree.html">
+            
+                <a href="nerdtree.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    NERDTree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="winmanager.html">
+            
+                <a href="winmanager.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    Winmanager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="vim-multiple-cursors.html">
+            
+                <a href="vim-multiple-cursors.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    Vim-multiple-cursors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="其他插件.html">
+            
+                <a href="其他插件.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    其他插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Vundle</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="vundle"><a name="vundle" class="plugin-anchor" href="#vundle"><i class="fa fa-link" aria-hidden="true"></i></a>Vundle</h2>
+<h3 id="&#x5B89;&#x88C5;"><a name="&#x5B89;&#x88C5;" class="plugin-anchor" href="#&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x88C5;</h3>
+<p>vundle&#x662F;vim&#x7684;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x7BA1;&#x7406;&#x5668;,&#x4F7F;&#x7528;&#x5B83;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x5B89;&#x88C5;&#x7BA1;&#x7406;vim&#x7684;&#x5404;&#x79CD;&#x63D2;&#x4EF6;,&#x4E0B;&#x9762;&#x662F;&#x5B83;&#x7684;<a href="https://github.com/VundleVim/Vundle.vim" target="_blank">github&#x5730;&#x5740;</a>,&#x4E0B;&#x9762;&#x662F;&#x5B89;&#x88C5;&#x6D41;&#x7A0B;(&#x5177;&#x4F53;&#x4EE5;github&#x4E0A;&#x7684;&#x8BF4;&#x660E;&#x4E3A;&#x4E3B;):</p>
+<ul>
+<li>&#x4E0B;&#x8F7D;vundle</li>
+</ul>
+<pre class="language-"><code>$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+</code></pre><ul>
+<li>&#x914D;&#x7F6E;&#x6587;&#x4EF6;<br>&#x5C06;&#x4E0B;&#x9762;&#x914D;&#x7F6E;copy&#x5230;~/.vimrc&#x6587;&#x4EF6;&#x4E2D;</li>
+</ul>
+<pre class="language-"><code>set nocompatible              &quot; be iMproved, required
+filetype off                  &quot; required
+
+&quot; set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+&quot; alternatively, pass a path where Vundle should install plugins
+&quot;call vundle#begin(&apos;~/some/path/here&apos;)
+
+&quot; let Vundle manage Vundle, required
+Plugin &apos;VundleVim/Vundle.vim&apos;
+
+&quot; The following are examples of different formats supported.
+&quot; Keep Plugin commands between vundle#begin/end.
+&quot; plugin on GitHub repo
+Plugin &apos;tpope/vim-fugitive&apos;
+&quot; plugin from http://vim-scripts.org/vim/scripts.html
+&quot;Plugin &apos;L9&apos;
+&quot; Git plugin not hosted on GitHub
+Plugin &apos;git://git.wincent.com/command-t.git&apos;
+&quot; git repos on your local machine (i.e. when working on your own plugin)
+&quot;Plugin &apos;file:///home/gmarik/path/to/plugin&apos;
+&quot; The sparkup vim script is in a subdirectory of this repo called vim.
+&quot; Pass the path to set the runtimepath properly.
+Plugin &apos;rstacruz/sparkup&apos;, {&apos;rtp&apos;: &apos;vim/&apos;}
+&quot; Avoid a name conflict with L9
+&quot;Plugin &apos;user/L9&apos;, {&apos;name&apos;: &apos;newL9&apos;}
+
+&quot; All of your Plugins must be added before the following line
+call vundle#end()            &quot; required
+filetype plugin indent on    &quot; required
+&quot; To ignore plugin indent changes, instead use:
+&quot;filetype plugin on
+&quot;
+&quot; Brief help
+&quot; :PluginList       - lists configured plugins
+&quot; :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+&quot; :PluginSearch foo - searches for foo; append `!` to refresh local cache
+&quot; :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+&quot;
+&quot; see :h vundle for more details or wiki for FAQ
+&quot; Put your non-Plugin stuff after this line
+</code></pre><ul>
+<li>&#x5B89;&#x88C5;&#x63D2;&#x4EF6;<br>&#x6253;&#x5F00;vim, &#x8F93;&#x5165;:PluginInstall</li>
+</ul>
+<h3 id="&#x547D;&#x4EE4;"><a name="&#x547D;&#x4EE4;" class="plugin-anchor" href="#&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x547D;&#x4EE4;</h3>
+<ul>
+<li><strong>:BundleList</strong> -&#x5217;&#x4E3E;&#x51FA;&#x5217;&#x8868;&#x4E2D;(.vimrc&#x4E2D;)&#x914D;&#x7F6E;&#x7684;&#x6240;&#x6709;&#x63D2;&#x4EF6;</li>
+<li><strong>:BundleInstall</strong> -&#x5B89;&#x88C5;&#x5217;&#x8868;&#x4E2D;&#x5168;&#x90E8;&#x63D2;&#x4EF6;</li>
+<li><strong>:BundleInstall!</strong> -&#x66F4;&#x65B0;&#x5217;&#x8868;&#x4E2D;&#x5168;&#x90E8;&#x63D2;&#x4EF6;</li>
+<li><strong>:BundleSearch foo</strong> -&#x67E5;&#x627E;foo&#x63D2;&#x4EF6;</li>
+<li><strong>:BundleSearch! foo</strong> -&#x5237;&#x65B0;foo&#x63D2;&#x4EF6;&#x7F13;&#x5B58;</li>
+<li><strong>:BundleClean</strong> -&#x6E05;&#x9664;&#x5217;&#x8868;&#x4E2D;&#x6CA1;&#x6709;&#x7684;&#x63D2;&#x4EF6;</li>
+<li><strong>:BundleClean!</strong> -&#x6E05;&#x9664;&#x5217;&#x8868;&#x4E2D;&#x6CA1;&#x6709;&#x7684;&#x63D2;&#x4EF6;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../vimrc文件.html" class="navigation navigation-prev " aria-label="Previous page: vimrc文件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="youcompleteme.html" class="navigation navigation-next " aria-label="Next page: YouCompleteMe">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Vundle","level":"3.1","depth":1,"next":{"title":"YouCompleteMe","level":"3.2","depth":1,"path":"插件/youcompleteme.md","ref":"插件/youcompleteme.md","articles":[]},"previous":{"title":"vimrc文件","level":"2.13","depth":1,"path":"vimrc文件.md","ref":"vimrc文件.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github-buttons@2.1.0","github@^2.0.0","edit-link@^2.0.2","prism@^2.1.0","disqus@^0.1.0","prism-themes@^0.0.2","anchors@^0.7.1","sitemap-general@^0.1.1","favicon@^0.0.2","3-ba@^0.9.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"github":{"url":"https://github.com/zhangjikai/vim_learn"},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"sitemap-general":{"prefix":"http://vim.zhangjikai.com"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"zhangjikai/vim_learn","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/zhangjikai/vim_learn/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Vim 学习笔记","language":"zh-hans","output.name":"site","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Home":"http://www.zhangjikai.com"}},"gitbook":"3.2.2","description":"Vim 学习笔记"},"file":{"path":"插件/vundle.md","mtime":"2017-03-31T03:17:34.829Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-31T06:04:14.225Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

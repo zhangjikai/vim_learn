@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>前言 · Vim 学习笔记</title>
+        <title>执行shell命令 · Vim 学习笔记</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -69,8 +69,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="复制剪切粘贴.html" />
+    <link rel="next" href="分屏.html" />
     
+    
+    <link rel="prev" href="替换.html" />
     
 
     
@@ -128,7 +130,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -240,7 +242,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.7" data-path="执行shell命令.html">
+        <li class="chapter active" data-level="2.7" data-path="执行shell命令.html">
             
                 <a href="执行shell命令.html">
             
@@ -532,7 +534,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >前言</a>
+        <a href="." >执行shell命令</a>
     </h1>
 </div>
 
@@ -547,36 +549,24 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="vim&#x5B66;&#x4E60;"><a name="vim&#x5B66;&#x4E60;" class="plugin-anchor" href="#vim&#x5B66;&#x4E60;"><i class="fa fa-link" aria-hidden="true"></i></a>Vim&#x5B66;&#x4E60;</h1>
-<p>&#x8BB0;&#x5F55;vim&#x7684;&#x76F8;&#x5173;&#x5185;&#x5BB9;</p>
-<h2 id="&#x4F7F;&#x7528;"><a name="&#x4F7F;&#x7528;" class="plugin-anchor" href="#&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;</h2>
-<ul>
-<li><a href="&#x590D;&#x5236;&#x526A;&#x5207;&#x7C98;&#x8D34;.html">&#x590D;&#x5236;&#x526A;&#x5207;&#x7C98;&#x8D34;</a></li>
-<li><a href="&#x5220;&#x9664;.html">&#x5220;&#x9664;</a></li>
-<li><a href="&#x9009;&#x62E9;.html">&#x9009;&#x62E9;</a></li>
-<li><a href="&#x79FB;&#x52A8;.html">&#x79FB;&#x52A8;</a></li>
-<li><a href="&#x5757;&#x7F16;&#x8F91;.html">&#x5757;&#x7F16;&#x8F91;</a></li>
-<li><a href="&#x66FF;&#x6362;.html">&#x66FF;&#x6362;</a></li>
-<li><a href="&#x6267;&#x884C;shell&#x547D;&#x4EE4;.html">&#x6267;&#x884C;shell&#x547D;&#x4EE4;</a></li>
-<li><a href="&#x5206;&#x5C4F;.html">&#x5206;&#x5C4F;</a></li>
-<li><a href="&#x64CD;&#x4F5C;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;.html">&#x64CD;&#x4F5C;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;</a></li>
-<li><a href="&#x5927;&#x5C0F;&#x5199;&#x8F6C;&#x6362;.html">&#x5927;&#x5C0F;&#x5199;&#x8F6C;&#x6362;</a></li>
-<li><a href="&#x8F93;&#x5165;&#x7279;&#x6B8A;&#x5B57;&#x7B26;.html">&#x8F93;&#x5165;&#x7279;&#x6B8A;&#x5B57;&#x7B26;</a></li>
-<li><a href="vimrc&#x914D;&#x7F6E;.html">vimrc&#x914D;&#x7F6E;</a></li>
-<li><a href="vimrc&#x6587;&#x4EF6;.html">vimrc&#x6587;&#x4EF6;</a></li>
-</ul>
-<h2 id="&#x63D2;&#x4EF6;"><a name="&#x63D2;&#x4EF6;" class="plugin-anchor" href="#&#x63D2;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63D2;&#x4EF6;</h2>
-<ul>
-<li><a href="&#x63D2;&#x4EF6;/vundle.html">Vundle</a></li>
-<li><a href="&#x63D2;&#x4EF6;/youcompleteme.html">YouCompleteMe</a></li>
-<li><a href="&#x63D2;&#x4EF6;/markdown.html">Markdown</a></li>
-<li><a href="&#x63D2;&#x4EF6;/minibufexplorer.html">MiniBufExplorer</a></li>
-<li><a href="&#x63D2;&#x4EF6;/taglist.html">Taglist</a></li>
-<li><a href="&#x63D2;&#x4EF6;/ctags.html">Ctags</a></li>
-<li><a href="&#x63D2;&#x4EF6;/nerdtree.html">NERDTree</a></li>
-<li><a href="&#x63D2;&#x4EF6;/winmanager.html">Winmanager</a></li>
-<li><a href="&#x63D2;&#x4EF6;/vim-multiple-cursors.html">vim-multiple-cursors</a></li>
-</ul>
+                                <h1 id="&#x6267;&#x884C;shell&#x547D;&#x4EE4;"><a name="&#x6267;&#x884C;shell&#x547D;&#x4EE4;" class="plugin-anchor" href="#&#x6267;&#x884C;shell&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6267;&#x884C;shell&#x547D;&#x4EE4;</h1>
+<h3 id="&#x6267;&#x884C;&#x5355;&#x6761;shell&#x547D;&#x4EE4;"><a name="&#x6267;&#x884C;&#x5355;&#x6761;shell&#x547D;&#x4EE4;" class="plugin-anchor" href="#&#x6267;&#x884C;&#x5355;&#x6761;shell&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6267;&#x884C;&#x5355;&#x6761;shell&#x547D;&#x4EE4;</h3>
+<pre class="language-"><code class="lang-bash">// &#x5728;&#x547D;&#x4EE4;&#x524D;&#x9762;&#x52A0;&#x4E2A;<span class="token operator">!</span>&#x53F7;, &#x6267;&#x884C;&#x4E07;&#x547D;&#x4EE4;&#x540E;&#x4F1A;&#x63D0;&#x793A;&#x8FD4;&#x56DE;vim
+:<span class="token operator">!</span> <span class="token punctuation">{</span>command<span class="token punctuation">}</span>
+
+// &#x6267;&#x884C;&#x547D;&#x4EE4;,&#x5E76;&#x8BFB;&#x53D6;&#x5176;&#x8F93;&#x51FA;<span class="token punctuation">(</span>&#x662F;&#x5C06;&#x547D;&#x4EE4;&#x7684;&#x8F93;&#x51FA;&#x5199;&#x5165;&#x5230;&#x5F53;&#x524D;&#x7684;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x4E2D;<span class="token punctuation">)</span>
+:r <span class="token operator">!</span><span class="token punctuation">{</span>command<span class="token punctuation">}</span>
+
+// &#x6267;&#x884C;&#x547D;&#x4EE4;, &#x5E76;&#x5C06;&#x547D;&#x4EE4;&#x7684;&#x8F93;&#x51FA;&#x4F20;&#x9001;&#x81F3;vim&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#x8F93;&#x5165;<span class="token punctuation">(</span>&#x5373;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x90A3;&#x91CC;&#x8F93;&#x51FA;<span class="token punctuation">)</span>
+:w <span class="token operator">!</span><span class="token punctuation">{</span>command<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x6253;&#x5F00;shell&#x7A97;&#x53E3;"><a name="&#x6253;&#x5F00;shell&#x7A97;&#x53E3;" class="plugin-anchor" href="#&#x6253;&#x5F00;shell&#x7A97;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6253;&#x5F00;shell&#x7A97;&#x53E3;</h3>
+<pre class="language-"><code class="lang-bash">//&#x5728;vim&#x4E2D;&#x8F93;&#x5165;,&#x5C31;&#x4F1A;&#x6302;&#x8D77;vim, &#x8FDB;&#x5165;&#x5230;shell&#x6267;&#x884C;&#x6846;
+:shell
+
+//&#x6267;&#x884C;&#x5B8C;shell&#x547D;&#x4EE4;,&#x4F7F;&#x7528;exit&#x8FD4;&#x56DE;&#x5230;vim
+<span class="token keyword">exit</span>
+</code></pre>
 
                                 
                                 </section>
@@ -604,8 +594,12 @@
 
             
                 
+                <a href="替换.html" class="navigation navigation-prev " aria-label="Previous page: 替换">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="复制剪切粘贴.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 复制剪切粘贴">
+                
+                <a href="分屏.html" class="navigation navigation-next " aria-label="Next page: 分屏">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -616,7 +610,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"前言","level":"1.1","depth":1,"next":{"title":"复制剪切粘贴","level":"2.1","depth":1,"path":"复制剪切粘贴.md","ref":"复制剪切粘贴.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github-buttons@2.1.0","github@^2.0.0","edit-link@^2.0.2","prism@^2.1.0","disqus@^0.1.0","prism-themes@^0.0.2","anchors@^0.7.1","sitemap-general@^0.1.1","favicon@^0.0.2","3-ba@^0.9.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"github":{"url":"https://github.com/zhangjikai/vim_learn"},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"sitemap-general":{"prefix":"http://vim.zhangjikai.com"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"zhangjikai/vim_learn","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/zhangjikai/vim_learn/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Vim 学习笔记","language":"zh-hans","output.name":"site","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Home":"http://www.zhangjikai.com"}},"gitbook":"3.2.2","description":"Vim 学习笔记"},"file":{"path":"README.md","mtime":"2017-03-31T05:08:31.707Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-31T06:04:14.225Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"执行shell命令","level":"2.7","depth":1,"next":{"title":"分屏","level":"2.8","depth":1,"path":"分屏.md","ref":"分屏.md","articles":[]},"previous":{"title":"替换","level":"2.6","depth":1,"path":"替换.md","ref":"替换.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github-buttons@2.1.0","github@^2.0.0","edit-link@^2.0.2","prism@^2.1.0","disqus@^0.1.0","prism-themes@^0.0.2","anchors@^0.7.1","sitemap-general@^0.1.1","favicon@^0.0.2","3-ba@^0.9.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"github":{"url":"https://github.com/zhangjikai/vim_learn"},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"sitemap-general":{"prefix":"http://vim.zhangjikai.com"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"zhangjikai/vim_learn","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/zhangjikai/vim_learn/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Vim 学习笔记","language":"zh-hans","output.name":"site","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Home":"http://www.zhangjikai.com"}},"gitbook":"3.2.2","description":"Vim 学习笔记"},"file":{"path":"执行shell命令.md","mtime":"2017-03-31T03:17:34.822Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-31T06:04:14.225Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
