@@ -15,7 +15,18 @@ set nofoldernable
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 ```
 
-#### 快捷键
+### 配置快捷键
+插入模式下移动使用 ctrl + h/j/k/l 移动光标
+```
+inoremap jk <esc>
+:imap <C-h> <Left>
+:imap <C-j> <Down>
+:imap <C-k> <Up>
+:imap <C-l> <Right>
+:imap <C-o> <End>
+```
+
+### 快捷键
 * `zc`: 关闭折叠
 * `zo`: 打开折叠
 * `za`: 打开或者关闭当前折叠
