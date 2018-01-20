@@ -1,6 +1,7 @@
 #!/bin/sh
 git add .
 git commit -m "update"
+git push
 cd /home/zhangjikai/文档/source_new/git-new/github/vim_learn
 git checkout master
 git pull

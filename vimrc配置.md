@@ -41,3 +41,8 @@ nmap <silent> tO :call append(line('.')-1, '')<CR>k
 ```
 #### 快捷键
 使用 `to` 或者 `tO` 组合键
+
+### 头文件和源文件互换
+```
+nnoremap <silent> <F12> :A<CR>
+```
